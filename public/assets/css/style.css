@@ -70,10 +70,7 @@ svg:hover {
 
 .navlogo {
   width: 60px;
-  animation-delay: 0.5s;
-  animation-duration: 1s;
-  animation-name: spin;
-  animation-fill-mode: forwards;
+  border-radius: 2px;
 }
 
 @keyframes spin {
