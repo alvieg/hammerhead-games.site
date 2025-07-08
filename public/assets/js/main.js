@@ -166,13 +166,13 @@ fetch('/games.json')
                                 </div>
                             </div>
                         </a>` //play.html?path=Game/${game.iframepath}&name=${game.name}&author=${game.creator}&image=${game.image}`;
-                    gameContainer.insertAdjacentHTML('beforeend', link);
+                    gameContainer.innerHTML += link;
                 } else {
                     const link = `
-                        <a href="${game.path}" alt="${game.name}">
+                        <a href="play.html?path=Game/${game.iframepath}&name=${game.name}&author=${game.creator}&image=${game.image}" alt="${game.name}">
                             <img src="${game.image}" alt="${game.name}" width="150" loading="lazy" height="150" class="GameImgs" />
                         </a>`;
-                    gameContainer.insertAdjacentHTML('beforeend', link);
+                    gameContainer.innerHTML += link;
                 }
             }
         });
