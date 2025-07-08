@@ -150,15 +150,17 @@ window.clearDisclaimerCookie = function() {
 };
 
 const gsrc = encodeURIComponent('https://developers-fun.github.io');
+const i = 'index.html'
 fetch('/games.json')
     .then(response => response.json())
     .then(data => {
         data.games.forEach(game => {
             if (game.visible === 1){
+                const path = gsrc + game.iframepath + i;
                 const gameContainer = document.querySelector(game.hot === 1 ? '#Boxes' : '#gameid');
                 if (game.hot ===1){
                     const link = `
-                        <a href="play.html?path=${gsrc + game.iframepath}&name=${game.name}&author=${game.creator}&image=${game.image}">
+                        <a href="play.html?path=${path}&name=${game.name}&author=${game.creator}&image=${game.image}">
                             <div class="SmallBox">
                                 <img src="${game.image}" loading="lazy" alt="${game.name}" width="80" height="80" class="Box-Image" />
                                 <div class="text-container">
@@ -170,7 +172,7 @@ fetch('/games.json')
                     gameContainer.innerHTML += link;
                 } else {
                     const link = `
-                        <a href="play.html?path=${gsrc + game.iframepath}&name=${game.name}&author=${game.creator}&image=${game.image}" alt="${game.name}">
+                        <a href="play.html?path=${path}&name=${game.name}&author=${game.creator}&image=${game.image}" alt="${game.name}">
                             <img src="${game.image}" alt="${game.name}" width="150" loading="lazy" height="150" class="GameImgs" />
                         </a>`;
                     gameContainer.innerHTML += link;
