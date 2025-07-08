@@ -1,12 +1,11 @@
 /* Adjust iframe layout */
 #iframe {
     height: 600px;
-    width: calc(100vw - 300px); /* Subtract 300px for the ad container */
+    width: 100vw; /* Subtract 300px for the ad container */
     outline: none;
     border: none;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin-left: 50px;
     margin-top: 20px;
 }
 
@@ -59,7 +58,6 @@
 .TagTextContainer {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
 }
 
 .TagGameName {
