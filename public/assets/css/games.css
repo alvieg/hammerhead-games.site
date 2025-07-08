@@ -12,7 +12,7 @@
 /* Tag container setup */
 .Tag {
   margin: auto;
-  width: calc(100vw - 300px); /* Relative width for responsiveness */
+  width: 100vw; /* Relative width for responsiveness */
   height: 100px;
   margin-left: 50px;
   display: flex;

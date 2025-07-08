@@ -156,7 +156,7 @@ fetch('/games.json')
     .then(data => {
         data.games.forEach(game => {
             if (game.visible === 1){
-                const path = gsrc + game.iframepath;
+                const path = game.iframepath;
                 const gameContainer = document.querySelector(game.hot === 1 ? '#Boxes' : '#gameid');
                 if (game.hot ===1){
                     const link = `
