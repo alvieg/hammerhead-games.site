@@ -80,6 +80,8 @@ const gameAuthorElem = document.querySelector('.TagGameCreator');
 
 if (iframepath) {
   iframe.src = decodeURIComponent(iframepath);
+} else {
+  iframe.src = '/404.html'
 }
 if (gameName) {
   gameNameElem.textContent = gameName;
