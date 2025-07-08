@@ -65,3 +65,28 @@ window.openFullscreen = function() {
 function is_mobile_device() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
 }
+
+//`play.html?path=https://developers-fun.github.io${game.iframepath}&name=${game.name}&author=${game.creator}&image=${game.image}`;
+const params = new URLSearchParams(window.location.search);
+const iframepath = params.get('path');
+const gameName = params.get('name');
+const gameAuthor = params.get('author');
+const gameImage = params.get('image');
+
+const iframe = document.getElementById('iframe');
+const image = document.querySelector('.TagImg');
+const gameNameElem = document.querySelector('.TagGameName');
+const gameAuthorElem = document.querySelector('.TagGameCreator');
+
+if (iframepath) {
+  iframe.src = iframepath;
+}
+if (gameName) {
+  gameNameElem.textContent = gameName;
+}
+if (gameAuthor) {
+  gameAuthorElem.textContent = gameAuthor;
+}
+if (gameImage) {
+  image.src = gameImage;
+}

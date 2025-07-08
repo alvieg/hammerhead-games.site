@@ -148,3 +148,37 @@ window.clearDisclaimerCookie = function() {
         console.error('❌ Disclaimer popup not initialized yet');
     }
 };
+
+fetch('/games.json')
+    .then(response => response.json())
+    .then(data => {
+        data.games.forEach(game => {
+            if (game.visible === 1){
+                const gameContainer = document.querySelector(game.hot === 1 ? '#Boxes' : '#gameid');
+                if (game.hot ===1){
+                    const link = `
+                        <a href="play.html?path=https://developers-fun.github.io${game.iframepath}&name=${game.name}&author=${game.creator}&image=${game.image}">
+                            <div class="SmallBox">
+                                <img src="${game.image}" loading="lazy" alt="${game.name}" width="80" height="80" class="Box-Image" />
+                                <div class="text-container">
+                                    <h3 class="GameName">${game.name}</h3>
+                                    <h3 class="AuthorName">${game.creator}</h3>
+                                </div>
+                            </div>
+                        </a>` //play.html?path=Game/${game.iframepath}&name=${game.name}&author=${game.creator}&image=${game.image}`;
+                    gameContainer.insertAdjacentHTML('beforeend', link);
+                } else {
+                    const link = `
+                        <a href="${game.path}" alt="${game.name}">
+                            <img src="${game.image}" alt="${game.name}" width="150" loading="lazy" height="150" class="GameImgs" />
+                        </a>`;
+                    gameContainer.insertAdjacentHTML('beforeend', link);
+                }
+            }
+        });
+    })
+    .catch(error => {
+        console.error('Error loading games:', error);
+        const gameContainer = document.querySelector('.gameid');
+        gameContainer.innerHTML = '<p>Error loading games. Please try again later.</p>';
+    })
