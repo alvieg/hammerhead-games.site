@@ -70,7 +70,7 @@ svg:hover {
 
 .navlogo {
   width: 60px;
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
 @keyframes spin {
