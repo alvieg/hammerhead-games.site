@@ -132,7 +132,7 @@ main {
 /* Carousel track */
 .carousel-track {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   overflow-x: auto;
   scroll-behavior: smooth;
   padding: 0.5rem 0;
@@ -146,7 +146,7 @@ main {
 
 /* Carousel cards */
 .carousel-card {
-  flex: 0 0 200px;
+  flex: 0 0 180px;
   background-color: #2a2a2a;
   border-radius: 8px;
   overflow: hidden;
