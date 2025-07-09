@@ -8,35 +8,23 @@ body {
   padding: 0;
 }
 
-/* Game area styling */
-#game-area {
-  position: relative;
-  background: linear-gradient(135deg, var(--surface-dark) 0%, var(--surface-light) 100%);
-  border-radius: 12px;
-  margin: 20px 10px;
-  box-shadow: 0 8px 32px var(--shadow-dark);
-  border: 1px solid var(--border-light);
-  overflow: hidden;
-}
-
-/* Adjust iframe layout */
+/* Adjust iframe layout - centered with 10px margins */
 #iframe {
     height: 600px;
     width: calc(100vw - 20px);
     outline: none;
     border: none;
     border-radius: 12px;
-    margin: 0;
+    margin: 90px 10px 0 10px;
     display: block;
-    margin-top: 90px; /* Adjusted for new header height */
     box-shadow: 0 8px 32px var(--shadow-dark);
 }
 
-/* Tag container setup - Navbar inspired design */
+/* Tag container setup - exactly like navbar */
 .Tag {
   width: calc(100vw - 20px);
   height: 70px;
-  margin: 0 10px;
+  margin: 10px 10px 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,7 +37,6 @@ body {
   box-sizing: border-box;
   border: 1px solid var(--border-light);
   box-shadow: 0 4px 20px var(--shadow-dark);
-  margin-top: 10px;
 }
 
 /* Tag image styling */
@@ -101,7 +88,7 @@ body {
   flex: 1;
 }
 
-/* Fullscreen button styling - Navbar button style */
+/* Fullscreen button styling - exactly like navbar buttons */
 .FullscreenImg {
   width: 40px;
   height: 40px;
@@ -116,9 +103,10 @@ body {
 }
 
 .FullscreenImg:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px var(--shadow-dark);
   background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(78, 205, 196, 0.3);
   border-color: var(--accent-blue);
 }
 
@@ -269,19 +257,17 @@ header {
 
 /* Responsive design for game bar */
 @media (max-width: 768px) {
-  #game-area {
-    margin: 15px 10px;
-  }
-
   #iframe {
     width: calc(100vw - 20px);
-    margin-top: 80px;
+    margin: 80px 10px 0 10px;
+    height: 500px;
   }
 
   .Tag {
     height: 60px;
     padding: 0 1rem;
     width: calc(100vw - 20px);
+    margin: 10px 10px 0 10px;
   }
 
   .TagImg {
@@ -302,10 +288,6 @@ header {
     width: 32px;
     height: 32px;
     margin-left: 0.75rem;
-  }
-
-  .game-stats {
-    display: none;
   }
 
   header {
@@ -355,13 +337,17 @@ header {
 }
 
 @media (max-width: 550px) {
-  #game-area {
-    margin: 10px 10px;
+  #iframe {
+    width: calc(100vw - 20px);
+    margin: 70px 10px 0 10px;
+    height: 450px;
   }
 
   .Tag {
     height: 55px;
     padding: 0 0.75rem;
+    width: calc(100vw - 20px);
+    margin: 10px 10px 0 10px;
   }
 
   .TagImg {
