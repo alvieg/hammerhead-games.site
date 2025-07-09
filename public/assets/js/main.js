@@ -127,6 +127,63 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     console.log("⏰ Popup will not auto-show (cookie exists)");
   }
+
+  const validCategories = ["sports", "action", "strategy", "puzzle", "arcade"];
+
+  fetch("/games.json")
+    .then((response) => response.json())
+    .then((games) => {
+      const allGames = document.getElementById("all-games");
+      const hotGames = document.querySelector("#hot-games");
+      for (const game of games) {
+        const category = game.category.toLowerCase();
+        const categoryContainer = document.getElementById(category + "-games");
+        const categoryTrack = categoryContainer ? categoryContainer.querySelector('.carousel-track') : null;
+        const hotTrack = hotGames.querySelector('.carousel-track');
+        const categoryHtml = `
+                <div class="carousel-card"><a href="${game.path}">
+                    <img src="${game.image}" alt="${game.name} image" title="${game.name}" class="game-image"></a>
+                </div>`;
+        const allGamesHtml = `
+                <div class="game-card"><a href="${game.path}">
+                    <img src="${game.image}" alt="${game.name} image" class="game-image">
+                    <h4 class="game-name">${game.name}</h4>
+                    <p class="game-creator">${game.creator}</p></a>
+                </div>`;
+
+        allGames.insertAdjacentHTML("beforeend", allGamesHtml);
+
+        if (validCategories.includes(category) && categoryTrack) {
+          categoryTrack.insertAdjacentHTML("beforeend", categoryHtml);
+        } else {
+          console.warn(
+            `${game.name} skipped: category \"${category}\" is missing or invalid`
+          );
+        }
+
+        if (game.hot && hotTrack) {
+          hotTrack.insertAdjacentHTML("beforeend", categoryHtml);
+        } else if (!game.hot) {
+          console.log(`${game.name} is not hot`);
+        }
+      }
+      
+      // Initialize carousel autoplay for each category
+      const categories = ['hot', 'action', 'strategy', 'sports', 'arcade', 'puzzle'];
+      categories.forEach(category => {
+        const track = document.querySelector(`#${category}-games .carousel-track`);
+        if (track && track.children.length > 0) {
+          initCarouselAutoplay(`#${category}-games .carousel-track`);
+          console.log(`🎠 Initialized carousel autoplay for ${category} games`);
+        }
+      });
+    })
+    .catch((error) => {
+      console.error("Error loading games:", error);
+      const gameContainer = document.querySelector("#all-games");
+      gameContainer.innerHTML =
+        "<p>Error loading games. Please try again later.</p>";
+    });
 });
 
 // Global function to show popup from external scripts
@@ -157,18 +214,27 @@ window.clearDisclaimerCookie = function () {
   }
 };
 
-/*function initCarouselAutoplay(selector) {
+function initCarouselAutoplay(selector) {
   const track = document.querySelector(selector);
-  if (!track) return;
+  if (!track) {
+    console.warn(`Carousel track not found: ${selector}`);
+    return;
+  }
 
   const cards = track.querySelectorAll(".carousel-card");
+  if (cards.length === 0) {
+    console.warn(`No cards found in carousel: ${selector}`);
+    return;
+  }
+
   let current = 0;
+  let interval;
 
   function update() {
     cards.forEach((card, i) => {
       card.style.transform = `translateX(${(i - current) * 220}px)`;
-      card.style.opacity = i === current ? "1" : "0";
-      card.classList.toggle("shrinking", i !== current);
+      card.style.opacity = i === current ? "1" : "0.7";
+      card.classList.toggle("active", i === current);
     });
   }
 
@@ -177,51 +243,26 @@ window.clearDisclaimerCookie = function () {
     update();
   }
 
+  function prev() {
+    current = (current - 1 + cards.length) % cards.length;
+    update();
+  }
+
+  // Add navigation buttons if they exist
+  const container = track.closest('.carousel');
+  const prevBtn = container?.querySelector('.arrow.left');
+  const nextBtn = container?.querySelector('.arrow.right');
+
+  if (prevBtn) prevBtn.addEventListener('click', prev);
+  if (nextBtn) nextBtn.addEventListener('click', next);
+
   update(); // initial render
-  setInterval(next, 3000);
-}*/
+  interval = setInterval(next, 3000);
 
-const validCategories = ["sports", "action", "strategy", "puzzle", "arcade"];
-
-fetch("/games.json")
-  .then((response) => response.json())
-  .then((games) => {
-    const allGames = document.getElementById("all-games");
-    const hotGames = document.querySelector("#hot-games");
-    for (const game of games) {
-      const category = game.category.toLowerCase();
-      const categoryArea = document.getElementById(category);
-      const categoryHtml = `
-                <div class="carousel-card"><a href="${game.path}"
-                    <img src="${game.image}" alt="${game.name} image" title="${game.name}"></a>
-                </div>`;
-      const allGamesHtml = `
-                <div class="game-card"><a href="${game.path}">
-                    <img src="${game.image}" alt="${game.name} image">
-                    <h4 class="game-name">${game.name}</h4>
-                    <p class="game-creator">${game.creator}</p></a>
-                </div>`;
-
-      allGames.insertAdjacentHTML("beforeend", allGamesHtml);
-
-      if (validCategories.includes(category) && categoryArea) {
-        categoryArea.insertAdjacentHTML("beforeend", categoryHtml);
-      } else {
-        console.warn(
-          `${game.name} skipped: category "${category}" is missing or invalid`
-        );
-      }
-
-      if (game.hot) {
-        hotGames.insertAdjacentHTML("beforeend", categoryHtml);
-      } else {
-        console.log(`${game.name} is not hot`);
-      }
-    }
-  })
-  .catch((error) => {
-    console.error("Error loading games:", error);
-    const gameContainer = document.querySelector("#all-games");
-    gameContainer.innerHTML =
-      "<p>Error loading games. Please try again later.</p>";
-  });
+  // Return cleanup function
+  return () => {
+    if (interval) clearInterval(interval);
+    if (prevBtn) prevBtn.removeEventListener('click', prev);
+    if (nextBtn) nextBtn.removeEventListener('click', next);
+  };
+}
