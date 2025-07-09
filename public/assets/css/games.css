@@ -1,9 +1,19 @@
+/* Import Bootstrap Icons for mobile back button */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css');
+
 /* Body styling for game pages */
 body {
   font-family: 'Arial', sans-serif;
   background-color: var(--background);
   color: var(--font-primary);
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove game-area wrapper styling that might interfere */
+#game-area {
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -478,14 +488,30 @@ footer {
   top: 20px;
   right: 20px;
   z-index: 1001;
-  display: flex;
+  display: none; /* Hidden by default, shown only in fullscreen on mobile */
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 16px var(--shadow-dark);
   transition: all 0.3s ease;
+  font-size: 1.5rem;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 #mobile-back-button:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 20px var(--shadow-dark);
+}
+
+#mobile-back-button:active {
+  transform: scale(0.95);
+}
+
+/* Show mobile back button only on mobile devices in fullscreen */
+@media (max-width: 768px) {
+  #mobile-back-button.fullscreen-active {
+    display: flex;
+  }
 }
