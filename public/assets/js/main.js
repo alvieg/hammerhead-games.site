@@ -149,7 +149,7 @@ window.clearDisclaimerCookie = function() {
     }
 };
 
-function initCarouselAutoplay(selector) {
+/*function initCarouselAutoplay(selector) {
   const track = document.querySelector(selector);
   if (!track) return;
 
@@ -171,7 +171,7 @@ function initCarouselAutoplay(selector) {
 
   update(); // initial render
   setInterval(next, 3000);
-}
+}*/
 
 fetch('/games.json')
     .then(response => response.json())
@@ -197,12 +197,12 @@ fetch('/games.json')
                 hotGames.innerHTML += categoryHtml;
             };
         }
-        initCarouselAutoplay("#hot-games .carousel-track");
+        /*initCarouselAutoplay("#hot-games .carousel-track");
         initCarouselAutoplay("#action-games .carousel-track");
         initCarouselAutoplay("#strategy-games .carousel-track");
         initCarouselAutoplay("#sports-games .carousel-track");
         initCarouselAutoplay("#puzzle-games .carousel-track");
-        initCarouselAutoplay("#arcade-games .carousel-track");
+        initCarouselAutoplay("#arcade-games .carousel-track");*/
     })
     .catch(error => {
         console.error('Error loading games:', error);
