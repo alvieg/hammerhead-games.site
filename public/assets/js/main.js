@@ -197,12 +197,6 @@ fetch('/games.json')
                 hotGames.innerHTML += categoryHtml;
             };
         }
-        /*initCarouselAutoplay("#hot-games .carousel-track");
-        initCarouselAutoplay("#action-games .carousel-track");
-        initCarouselAutoplay("#strategy-games .carousel-track");
-        initCarouselAutoplay("#sports-games .carousel-track");
-        initCarouselAutoplay("#puzzle-games .carousel-track");
-        initCarouselAutoplay("#arcade-games .carousel-track");*/
     })
     .catch(error => {
         console.error('Error loading games:', error);
