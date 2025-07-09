@@ -204,6 +204,8 @@ fetch('/games.json')
             }
             if (game.hot) {
                 hotGames.insertAdjacentHTML('beforeend', categoryHtml);
+            } else {
+              console.log(`${game.name} is not hot`);
             };
         }
     })
