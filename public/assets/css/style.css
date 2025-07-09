@@ -19,8 +19,8 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #0f0f0f;
-  color: #ffffff;
+  background-color: var(--background);
+  color: var(--font-primary);
   line-height: 1.6;
 }
 
@@ -93,7 +93,7 @@ main {
 /* Individual carousel containers */
 .carousel {
   grid-column: 1 / -1;
-  background-color: #1a1a1a;
+  background-color: var(--surface-dark);
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -132,7 +132,7 @@ main {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: var(--font-primary);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -154,7 +154,7 @@ main {
 /* Carousel cards */
 .carousel-card {
   flex: 0 0 180px;
-  background-color: #2a2a2a;
+  background-color: var(--surface-dark);
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -213,7 +213,7 @@ main {
 #all-games {
   grid-column: 1 / -1;
   grid-row: 13 / 15;
-  background-color: #1a1a1a;
+  background-color: var(--surface-dark);
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -225,12 +225,12 @@ main {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1.5rem;
-  margin-top: 4rem; /* Increased space for the title */
+  margin-top: 0; /* Remove margin since title is now before cards */
 }
 
 /* Game cards in all games section */
 .game-card {
-  background-color: #2a2a2a;
+  background-color: var(--surface-dark);
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -263,7 +263,7 @@ main {
   font-size: 0.9rem;
   font-weight: bold;
   margin: 0.5rem;
-  color: #ffffff;
+  color: var(--font-primary);
   text-align: center;
 }
 
@@ -276,17 +276,15 @@ main {
 
 /* All Games title positioning */
 #all-games .category-title {
-  position: absolute;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  z-index: 10;
+  position: static;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--font-primary);
 }
 
 /* Footer styles */
 footer {
-  background-color: #1a1a1a;
+  background-color: var(--surface-dark);
   padding: 2rem;
   margin-top: 2rem;
   text-align: center;
@@ -308,7 +306,7 @@ footer {
 
 .other-links-title {
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: var(--font-primary);
 }
 
 .otherlinks {
@@ -324,7 +322,7 @@ footer {
 }
 
 .otherlinks a:hover {
-  color: #ffffff;
+  color: var(--font-primary);
 }
 
 /* Disclaimer popup styles */
