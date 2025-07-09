@@ -21,21 +21,23 @@ body {
     box-shadow: 0 8px 32px var(--shadow-dark);
 }
 
-/* Tag container setup */
+/* Tag container setup - CrazyGames inspired design */
 .Tag {
   width: 100vw;
-  height: 100px;
+  height: 80px;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(135deg, var(--surface-dark) 0%, var(--surface-light) 100%);
   border-radius: 0;
-  padding: 10px;
+  padding: 0 2rem;
   position: relative;
   box-sizing: border-box;
   border-top: 1px solid var(--border-light);
-  box-shadow: 0 4px 16px var(--shadow-dark);
+  box-shadow: 0 -4px 20px var(--shadow-dark);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* Header styles for game pages - matching style.css */
@@ -107,55 +109,45 @@ header {
     }
 }
 
-/* Fullscreen image styling */
-.FullscreenImg {
-  width: 80px;
-  height: 80px;
-  margin-left: 10px;
-  display: block;
-  transition: all 0.3s ease;
-  border-radius: 8px;
-}
-
-.FullscreenImg:hover {
-  transform: scale(1.1);
-  filter: brightness(1.2);
-}
-
 /* Tag image styling */
 .TagImg {
-  width: 90px;
-  height: 90px;
-  border-radius: 16px;
-  margin-left: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  margin-right: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 16px var(--shadow-dark);
+  box-shadow: 0 4px 12px var(--shadow-dark);
+  object-fit: cover;
 }
 
 .TagImg:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 20px var(--shadow-dark);
+  box-shadow: 0 6px 16px var(--shadow-dark);
 }
 
 /* Tag text container */
 .TagTextContainer {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  gap: 0.25rem;
 }
 
 .TagGameName {
-  font-size: 25px;
-  margin-top: 1px;
-  margin-bottom: 5px;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--font-primary);
-  font-weight: bold;
-  text-shadow: 0 2px 4px var(--shadow-dark);
+  text-shadow: 0 1px 2px var(--shadow-dark);
+  margin: 0;
+  line-height: 1.2;
 }
 
 .TagGameCreator {
-  font-size: 20px;
+  font-size: 0.9rem;
   color: var(--text-secondary);
   font-weight: 500;
+  margin: 0;
+  line-height: 1.2;
 }
 
 /* Tag container flex setup */
@@ -163,13 +155,135 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex: 1;
+}
+
+/* Fullscreen button styling */
+.FullscreenImg {
+  width: 50px;
+  height: 50px;
+  margin-left: 1rem;
+  display: block;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  padding: 8px;
+  background: linear-gradient(135deg, var(--surface-light) 0%, var(--surface-dark) 100%);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 2px 8px var(--shadow-dark);
+}
+
+.FullscreenImg:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px var(--shadow-dark);
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  border-color: var(--accent-blue);
+}
+
+/* Game controls section */
+.game-controls {
+  display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
+/* Additional game info */
+.game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  margin-left: 1rem;
+}
+
+.game-stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.game-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Responsive design for game bar */
+@media (max-width: 768px) {
+  .Tag {
+    height: 70px;
+    padding: 0 1rem;
+  }
+
+  .TagImg {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.75rem;
+  }
+
+  .TagGameName {
+    font-size: 1.1rem;
+  }
+
+  .TagGameCreator {
+    font-size: 0.8rem;
+  }
+
+  .FullscreenImg {
+    width: 40px;
+    height: 40px;
+    margin-left: 0.75rem;
+  }
+
+  .game-stats {
+    display: none; /* Hide stats on mobile */
+  }
+}
+
 @media (max-width: 550px) {
-    .TagTextContainer {
-        display: none; /* Hide text on smaller screens */
-    }
+  .Tag {
+    height: 60px;
+    padding: 0 0.75rem;
+  }
+
+  .TagImg {
+    width: 45px;
+    height: 45px;
+    margin-right: 0.5rem;
+  }
+
+  .TagGameName {
+    font-size: 1rem;
+  }
+
+  .TagGameCreator {
+    font-size: 0.75rem;
+  }
+
+  .FullscreenImg {
+    width: 35px;
+    height: 35px;
+    margin-left: 0.5rem;
+  }
+
+  .TagTextContainer {
+    gap: 0.1rem;
+  }
+}
+
+/* Hide text on very small screens */
+@media (max-width: 400px) {
+  .TagTextContainer {
+    display: none;
+  }
+
+  .Tag {
+    justify-content: center;
+  }
+
+  .FullscreenImg {
+    margin-left: 0;
+  }
 }
 
 /* Footer styles for game pages - matching style.css */
