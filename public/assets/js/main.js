@@ -197,7 +197,7 @@ fetch('/games.json')
                 </div>`;
 
             allGames.insertAdjacentHTML('beforeend', allGamesHtml);
-            if (category in validCategories) {
+            if (validCategories.includes(category)) {
               category.insertAdjacentHTML('beforeend', categoryHtml);
             } else {
               console.warn(`${game.name} has Invalid category: ${category}`);
