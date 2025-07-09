@@ -149,39 +149,64 @@ window.clearDisclaimerCookie = function() {
     }
 };
 
-const gsrc = encodeURIComponent('https://developers-fun.github.io');
-const i = 'index.html'
+function initCarouselAutoplay(selector) {
+  const track = document.querySelector(selector);
+  if (!track) return;
+
+  const cards = track.querySelectorAll(".carousel-card");
+  let current = 0;
+
+  function update() {
+    cards.forEach((card, i) => {
+      card.style.transform = `translateX(${(i - current) * 220}px)`;
+      card.style.opacity = i === current ? "1" : "0";
+      card.classList.toggle("shrinking", i !== current);
+    });
+  }
+
+  function next() {
+    current = (current + 1) % cards.length;
+    update();
+  }
+
+  update(); // initial render
+  setInterval(next, 3000);
+}
+
 fetch('/games.json')
     .then(response => response.json())
-    .then(data => {
-        data.games.forEach(game => {
-            if (game.visible === 1){
-                const path = game.iframepath;
-                const gameContainer = document.querySelector(game.hot === 1 ? '#Boxes' : '#gameid');
-                if (game.hot ===1){
-                    const link = `
-                        <a href="play.html?path=${path}&name=${game.name}&author=${game.creator}&image=${game.image}">
-                            <div class="SmallBox">
-                                <img src="${game.image}" loading="lazy" alt="${game.name}" width="80" height="80" class="Box-Image" />
-                                <div class="text-container">
-                                    <h3 class="GameName">${game.name}</h3>
-                                    <h3 class="AuthorName">${game.creator}</h3>
-                                </div>
-                            </div>
-                        </a>` //play.html?path=Game/${game.iframepath}&name=${game.name}&author=${game.creator}&image=${game.image}`;
-                    gameContainer.innerHTML += link;
-                } else {
-                    const link = `
-                        <a href="play.html?path=${path}&name=${game.name}&author=${game.creator}&image=${game.image}" alt="${game.name}">
-                            <img src="${game.image}" alt="${game.name}" width="150" loading="lazy" height="150" class="GameImgs" />
-                        </a>`;
-                    gameContainer.innerHTML += link;
-                }
-            }
-        });
+    .then(games => {
+        const allGames = document.getElementById('all-games');
+        const hotGames = document.querySelector('#hot-games .carousel-track');
+        for (const game of games){
+            const category = document.querySelector(`#${game.category}-games .carousel-track`);
+            const categoryHtml = `
+                <div class="carousel-card"><a href="${game.path}"
+                    <img src="${game.image}" alt="${game.name} image" title="${game.name}"></a>
+                </div>`;
+            const allGamesHtml = `
+                <div class="game-card"><a href="${game.path}">
+                    <img src="${game.image}" alt="${game.name} image">
+                    <h4 class="game-name">${game.name}</h4>
+                    <p class="game-creator">${game.creator}</p></a>
+                </div>`;
+
+            allGames.innerHTML += allGamesHtml;
+            category.innerHTML += categoryHtml;
+            if (games.hot) {
+                hotGames.innerHTML += categoryHtml;
+            };
+        }
+        initCarouselAutoplay("#hot-games .carousel-track");
+        initCarouselAutoplay("#action-games .carousel-track");
+        initCarouselAutoplay("#strategy-games .carousel-track");
+        initCarouselAutoplay("#sports-games .carousel-track");
+        initCarouselAutoplay("#puzzle-games .carousel-track");
+        initCarouselAutoplay("#arcade-games .carousel-track");
     })
     .catch(error => {
         console.error('Error loading games:', error);
-        const gameContainer = document.querySelector('.gameid');
+        const gameContainer = document.querySelector('#all-games');
         gameContainer.innerHTML = '<p>Error loading games. Please try again later.</p>';
     })
+

@@ -1,757 +1,510 @@
-{
-    "games": [
-        {
-            "name": "1v1.lol",
-            "creator": "justplay.lol",
-            "path": "/g/1v1.lol.html",
-            "image": "/assets/image/1v1lol.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/1v1.lol/"
-        },
-        {
-            "name": "2 minute football",
-            "creator": "igamebank",
-            "path": "/g/2minutefootball.html",
-            "image": "/assets/image/2minutefootball.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "sports",
-                "arcade"
-            ],
-            "iframepath": "/2minutefootball"
-        },
-        {
-            "name": "among us",
-            "creator": "innersloth",
-            "path": "/g/amongus.html",
-            "image": "/assets/image/amoungus.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "multiplayer",
-                "strategy",
-                "social"
-            ],
-            "iframepath": "/amongus"
-        },
-        {
-            "name": "bitlife",
-            "creator": "candywriter",
-            "path": "/g/bitlife.html",
-            "image": "/assets/image/bitlife.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "arcade"
-            ],
-            "iframepath": "/bitlife"
-        },
-        {
-            "name": "block blast",
-            "creator": "hungry studio",
-            "path": "/g/blockblast.html",
-            "image": "/assets/image/blockblast.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "arcade"
-            ],
-            "iframepath": "/BlockBlast"
-        },
-        {
-            "name": "boxing random",
-            "creator": "rhm interactive",
-            "path": "/g/boxingrandom.html",
-            "image": "/assets/image/boxingrandom.webp",
-            "visible": 0,
-            "hot": 0,
-            "categories": [
-                "sports",
-                "arcade"
-            ],
-            "iframepath": "/boxingrandom"
-        },
-        {
-            "name": "basketball bros",
-            "creator": "mad puffers",
-            "path": "/g/basketballbros.html",
-            "image": "/assets/image/basketballstars.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "sports",
-                "arcade"
-            ],
-            "iframepath": "/basketbros"
-        },
-        {
-            "name": "blumgi slime",
-            "creator": "blumgi",
-            "path": "/g/blumgislime.html",
-            "image": "/assets/image/blumgislime.webp",
-            "visible": 0,
-            "hot": 1,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/blumgislime"
-        },
-        {
-            "name": "clicker heroes",
-            "creator": "playsaurus",
-            "path": "/g/clickerheroes.html",
-            "image": "/assets/image/clickerheroes.webp",
-            "visible": 0,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/clickerheroesmain/"
-        },
-        {
-            "name": "color switch",
-            "creator": "fortafy games",
-            "path": "/g/colorswitch.html",
-            "image": "/assets/image/colorswitch.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/colorswitchmain"
-        },
-        {
-            "name": "cookie clicker",
-            "creator": "redbit games",
-            "path": "/g/cookieclicker.html",
-            "image": "/assets/image/cookieclicker.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/cookieclickermain"
-        },
-        {
-            "name": "coreball",
-            "creator": "game distribution",
-            "path": "/g/coreball.html",
-            "image": "/assets/image/coreball.webp",
-            "visible": 0,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/coreball"
-        },
-        {
-            "name": "chess",
-            "creator": "unknown",
-            "path": "/g/chess.html",
-            "image": "/assets/image/chess.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "strategy",
-                "multiplayer"
-            ],
-            "iframepath": "/chess"
-        },
-        {
-            "name": "dadish",
-            "creator": "thomas k. young",
-            "path": "/g/dadish.html",
-            "image": "/assets/image/dadish.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/Dadish"
-        },
-        {
-            "name": "dadish 3",
-            "creator": "thomas k. young",
-            "path": "/g/dadish3.html",
-            "image": "/assets/image/dadish3.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/Dadish3"
-        },
-        {
-            "name": "descent",
-            "creator": "sakkat studio",
-            "path": "/g/descent.html",
-            "image": "/assets/image/descent.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/descent"
-        },
-        {
-            "name": "doodle baseball",
-            "creator": "google",
-            "path": "/g/doodlebaseball.html",
-            "image": "/assets/image/doodlebaseball.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/doodlebaseball"
-        },
-        {
-            "name": "doodle jump",
-            "creator": "lima sky",
-            "path": "/g/doodlejump.html",
-            "image": "/assets/image/doodlejump.webp",
-            "visible": 0,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/doodlejumpmain"
-        },
-        {
-            "name": "drift boss",
-            "creator": "marketjs",
-            "path": "/g/driftboss.html",
-            "image": "/assets/image/driftboss.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/driftbossmain"
-        },
-        {
-            "name": "drive mad",
-            "creator": "fancade",
-            "path": "/g/drivemad.html",
-            "image": "/assets/image/drivemad.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/drivemadmain"
-        },
-        {
-            "name": "escape road",
-            "creator": "az games",
-            "path": "/g/escaperoad.html",
-            "image": "/assets/image/escaperoad.webp",
-            "visible": 0,
-            "hot": 0,
-            "categories": [
-                "action"
-            ],
-            "iframepath": "https://azgames.io/escaperoad/"
-        },
-        {
-            "name": "escape road 2",
-            "creator": "az games",
-            "path": "/g/escaperoad2.html",
-            "image": "/assets/image/escaperoad2.webp",
-            "visible": 0,
-            "hot": 0,
-            "categories": [
-                "action"
-            ],
-            "iframepath": "https:/.azgame.io/escaperoad2/"
-        },
-        {
-            "name": "fruit ninja",
-            "creator": "halfbrick studios",
-            "path": "/g/fruitninja.html",
-            "image": "/assets/image/fruit.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/fruit"
-        },
-        {
-            "name": "geometry dash",
-            "creator": "robtop games",
-            "path": "/g/geometrydash.html",
-            "image": "/assets/image/geometrydash.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/geometrydash"
-        },
-        {
-            "name": "getaway shootout",
-            "creator": "neweich games",
-            "path": "/g/getawayshootout.html",
-            "image": "/assets/image/getawayshootout.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/GetawayShootouts"
-        },
-        {
-            "name": "gobble",
-            "creator": "fancade",
-            "path": "/g/gobble.html",
-            "image": "/assets/image/gobble.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/gobble"
-        },
-        {
-            "name": "google snake",
-            "creator": "google",
-            "path": "/g/googlesnake.html",
-            "image": "/assets/image/googlesnake.webp",
-            "visible": 0,
-            "hot": 0,
-            "categories": [
-                "puzzle"
-            ],
-            "iframepath": "/snak.ee/googlesnakenew"
-        },
-        {
-            "name": "hextris",
-            "creator": "hextris",
-            "path": "/g/hextris.html",
-            "image": "/assets/image/hextris.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/hextrismain"
-        },
-        {
-            "name": "hover racer drive",
-            "creator": "unknown",
-            "path": "/g/hoverracerdrive.html",
-            "image": "/assets/image/hoverracerdrive.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/hoverracedrive"
-        },
-        {
-            "name": "idle ants",
-            "creator": "MadBox",
-            "path": "/g/idleants.html",
-            "image": "/assets/image/idleants.webp",
-            "visible": 1,
-            "hot": 1,
-            "iframepath": "/idleants"
-        },
-        {
-            "name": "jetpack joyride",
-            "creator": "halfbrick studios",
-            "path": "/g/jetpackjoyride.html",
-            "image": "/assets/image/jetpack.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/jetpackjoyride"
-        },
-        {
-            "name": "l2f",
-            "creator": "marketjs",
-            "path": "/g/l2f.html",
-            "image": "/assets/image/l2f.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/L2f"
-        },
-        {
-            "name": "l2f2",
-            "creator": "marketjs",
-            "path": "/g/l2f2.html",
-            "image": "/assets/image/l2f2.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/L2f2"
-        },
-        {
-            "name": "l2f3",
-            "creator": "marketjs",
-            "path": "/g/l2f3.html",
-            "image": "/assets/image/l2f3.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/L2f3"
-        },
-        {
-            "name": "level devil",
-            "creator": "unept",
-            "path": "/g/leveldevil.html",
-            "image": "/assets/image/leveldevil.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/LevelDevil"
-        },
-        {
-            "name": "minecraft",
-            "creator": "mojang studios",
-            "path": "/g/minecraft.html",
-            "image": "/assets/image/minecraftlogo.webp",
-            "visible": 0,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/minecraft"
-        },
-        {
-            "name": "monkey mart",
-            "creator": "tinydobbins",
-            "path": "/g/monkeymart.html",
-            "image": "/assets/image/monkeymart.webp",
-            "visible": 0,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/monkeymart"
-        },
-        {
-            "name": "motoroadrash3d",
-            "creator": "unknown",
-            "path": "/g/motoroadrash3d.html",
-            "image": "/assets/image/motoroadrash3d.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/motoroadrash3d"
-        },
-        {
-            "name": "motox3m",
-            "creator": "mad puffers",
-            "path": "/g/motox3m.html",
-            "image": "/assets/image/motox3m.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/motox3mmain"
-        },
-        {
-            "name": "murder",
-            "creator": "studio seufz",
-            "path": "/g/murder.html",
-            "image": "/assets/image/murder.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/Murder"
-        },
-        {
-            "name": "ragdoll hit",
-            "creator": "ericetto",
-            "path": "/g/ragdollhit.html",
-            "image": "/assets/image/ragdollhit.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/ragdollhit"
-        },
-        {
-            "name": "retrobowl",
-            "creator": "new star games",
-            "path": "/g/retrobowl.html",
-            "image": "/assets/image/retrobowl.webp",
-            "visible": 0,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "https:/316009.konggames.comz/0031/6009/live/index.html"
-        },
-        {
-            "name": "slice master",
-            "creator": "unknown",
-            "path": "/g/slicemaster.html",
-            "image": "/assets/image/slicemaster.webp",
-            "visible": 0,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/slicemaster"
-        },
-        {
-            "name": "slime laboratory",
-            "creator": "neutronized.com",
-            "path": "/g/slimelaboratory.html",
-            "image": "/assets/image/slimelaboratory.webp",
-            "visible": 1,
-            "hot": 0,
-            "iframepath": "/slimelaboratory"
-        },
-        {
-            "name": "snow rider 3d",
-            "creator": "neutronized.com",
-            "path": "/g/snowrider3d.html",
-            "image": "/assets/image/snowrider.webp",
-            "visible": 1,
-            "hot": 0,
-            "iframepath": "/snowrider"
-        },
-        {
-            "name": "slope",
-            "creator": "y8",
-            "path": "/g/slope.html",
-            "image": "/assets/image/slope.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/Slope"
-        },
-        {
-            "name": "slope 2",
-            "creator": "y8",
-            "path": "/g/slope2.html",
-            "image": "/assets/image/slope.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/Slope2"
-        },
-        {
-            "name": "soccer random",
-            "creator": "rhm interactive",
-            "path": "/g/soccerrandom.html",
-            "image": "/assets/image/soccerrandom.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "sports",
-                "arcade"
-            ],
-            "iframepath": "/soccerrandom"
-        },
-        {
-            "name": "stack",
-            "creator": "ketchapp",
-            "path": "/g/stack.html",
-            "image": "/assets/image/stack.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/stackmain"
-        },
-        {
-            "name": "stacktris",
-            "creator": "fancade",
-            "path": "/g/stacktris.html",
-            "image": "/assets/image/stacktris.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/stacktris"
-        },
-        {
-            "name": "subway surfers",
-            "creator": "sybo games",
-            "path": "/g/subwaysurfers.html",
-            "image": "/assets/image/subwaysurfers.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/subwaysurfers"
-        },
-        {
-            "name": "table tennis world tour",
-            "creator": "yakuto",
-            "path": "/g/tabletennisworldtour.html",
-            "image": "/assets/image/tabletennisworldtour.webp",
-            "visible": 1,
-            "hot": 0,
-            "categories": [
-                "sports",
-                "arcade"
-            ],
-            "iframepath": "/TableTennisWorldTour"
-        },
-        {
-            "name": "tag",
-            "creator": "jetgames",
-            "path": "/g/tag.html",
-            "image": "/assets/image/tag.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/Tag"
-        },
-        {
-            "name": "tag 2",
-            "creator": "jetgames",
-            "path": "/g/tag2.html",
-            "image": "/assets/image/tag2.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/Tag2"
-        },
-        {
-            "name": "tinyfishing",
-            "creator": "mad buffer",
-            "path": "/g/tinyfishing.html",
-            "image": "/assets/image/tinyfishing.webp",
-            "visible": 0,
-            "hot": 0,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/tinyfishing"
-        },
-        {
-            "name": "zeepkist crash",
-            "creator": "steelpan interactive",
-            "path": "/g/zeepkistcrash.html",
-            "image": "/assets/image/zeepkistcrash.webp",
-            "visible": 1,
-            "hot": 1,
-            "categories": [
-                "action",
-                "shooter",
-                "multiplayer"
-            ],
-            "iframepath": "/zeepkistcrash"
-        }
-    ]
-}
+[
+  {
+    "name": "1v1.Lol",
+    "creator": "Justplay.lol",
+    "path": "/g/1v1.lol.html",
+    "image": "/assets/image/1v1lol.webp",
+    "hot": true,
+    "category": "action",
+    "iframepath": "/1v1.lol/"
+  },
+  {
+    "name": "Blumgi Slime",
+    "creator": "Blumgi",
+    "path": "/g/blumgislime.html",
+    "image": "/assets/image/blumgislime.webp",
+    "hot": true,
+    "category": "action",
+    "iframepath": "/blumgislime"
+  },
+  {
+    "name": "Clicker Heroes",
+    "creator": "Playsaurus",
+    "path": "/g/clickerheroes.html",
+    "image": "/assets/image/clickerheroes.webp",
+    "hot": false,
+    "category": "action",
+    "iframepath": "/clickerheroesmain/"
+  },
+  {
+    "name": "Color Switch",
+    "creator": "Fortafy Games",
+    "path": "/g/colorswitch.html",
+    "image": "/assets/image/colorswitch.webp",
+    "hot": false,
+    "category": "action",
+    "iframepath": "/colorswitchmain"
+  },
+  {
+    "name": "Cookie Clicker",
+    "creator": "Redbit Games",
+    "path": "/g/cookieclicker.html",
+    "image": "/assets/image/cookieclicker.webp",
+    "hot": false,
+    "category": "action",
+    "iframepath": "/cookieclickermain"
+  },
+  {
+    "name": "Coreball",
+    "creator": "Game Distribution",
+    "path": "/g/coreball.html",
+    "image": "/assets/image/coreball.webp",
+    "hot": false,
+    "category": "action",
+    "iframepath": "/coreball"
+  },
+  {
+    "name": "Dadish",
+    "creator": "Thomas K. Young",
+    "path": "/g/dadish.html",
+    "image": "/assets/image/dadish.webp",
+    "hot": false,
+    "category": "action",
+    "iframepath": "/Dadish"
+  },
+  {
+    "name": "Dadish 3",
+    "creator": "Thomas K. Young",
+    "path": "/g/dadish3.html",
+    "image": "/assets/image/dadish3.webp",
+    "hot": false,
+    "category": "action",
+    "iframepath": "/Dadish3"
+  },
+  {
+    "name": "Descent",
+    "creator": "Sakkat Studio",
+    "path": "/g/descent.html",
+    "image": "/assets/image/descent.webp",
+    "hot": false,
+    "category": "action",
+    "iframepath": "/descent"
+  },
+  {
+    "name": "Doodle Jump",
+    "creator": "Lima Sky",
+    "path": "/g/doodlejump.html",
+    "image": "/assets/image/doodlejump.webp",
+    "hot": false,
+    "category": "action",
+    "iframepath": "/doodlejumpmain"
+  },
+  {
+    "name": "Drift Boss",
+    "creator": "Marketjs",
+    "path": "/g/driftboss.html",
+    "image": "/assets/image/driftboss.webp",
+    "hot": false,
+    "category": "action",
+    "iframepath": "/driftbossmain"
+  },
+  {
+    "name": "Drive Mad",
+    "creator": "Fancade",
+    "path": "/g/drivemad.html",
+    "image": "/assets/image/drivemad.webp",
+    "hot": false,
+    "category": "action",
+    "iframepath": "/drivemadmain"
+  },
+
+  {
+    "name": "Among Us",
+    "creator": "Innersloth",
+    "path": "/g/amongus.html",
+    "image": "/assets/image/amoungus.webp",
+    "hot": false,
+    "category": "strategy",
+    "iframepath": "/amongus"
+  },
+  {
+    "name": "Chess",
+    "creator": "Unknown",
+    "path": "/g/chess.html",
+    "image": "/assets/image/chess.webp",
+    "hot": false,
+    "category": "strategy",
+    "iframepath": "/chess"
+  },
+  {
+    "name": "Fruit Ninja",
+    "creator": "Halfbrick Studios",
+    "path": "/g/fruitninja.html",
+    "image": "/assets/image/fruit.webp",
+    "hot": false,
+    "category": "strategy",
+    "iframepath": "/fruit"
+  },
+  {
+    "name": "Google Snake",
+    "creator": "Google",
+    "path": "/g/googlesnake.html",
+    "image": "/assets/image/googlesnake.webp",
+    "hot": false,
+    "category": "strategy",
+    "iframepath": "/snak.ee/googlesnakenew"
+  },
+  {
+    "name": "Hextris",
+    "creator": "Hextris",
+    "path": "/g/hextris.html",
+    "image": "/assets/image/hextris.webp",
+    "hot": false,
+    "category": "strategy",
+    "iframepath": "/hextrismain"
+  },
+  {
+    "name": "Idle Ants",
+    "creator": "MadBox",
+    "path": "/g/idleants.html",
+    "image": "/assets/image/idleants.webp",
+    "hot": true,
+    "category": "strategy",
+    "iframepath": "/idleants"
+  },
+  {
+    "name": "Minecraft",
+    "creator": "Mojang Studios",
+    "path": "/g/minecraft.html",
+    "image": "/assets/image/minecraftlogo.webp",
+    "hot": false,
+    "category": "strategy",
+    "iframepath": "/minecraft"
+  },
+  {
+    "name": "Monkey Mart",
+    "creator": "Tinydobbins",
+    "path": "/g/monkeymart.html",
+    "image": "/assets/image/monkeymart.webp",
+    "hot": false,
+    "category": "strategy",
+    "iframepath": "/monkeymart"
+  },
+  {
+    "name": "Murder",
+    "creator": "Studio Seufz",
+    "path": "/g/murder.html",
+    "image": "/assets/image/murder.webp",
+    "hot": false,
+    "category": "strategy",
+    "iframepath": "/Murder"
+  },
+  {
+    "name": "Ragdoll Hit",
+    "creator": "Ericetto",
+    "path": "/g/ragdollhit.html",
+    "image": "/assets/image/ragdollhit.webp",
+    "hot": true,
+    "category": "strategy",
+    "iframepath": "/ragdollhit"
+  },
+  {
+    "name": "Stack",
+    "creator": "Ketchapp",
+    "path": "/g/stack.html",
+    "image": "/assets/image/stack.webp",
+    "hot": false,
+    "category": "strategy",
+    "iframepath": "/stackmain"
+  },
+  {
+    "name": "Stacktris",
+    "creator": "Fancade",
+    "path": "/g/stacktris.html",
+    "image": "/assets/image/stacktris.webp",
+    "hot": true,
+    "category": "strategy",
+    "iframepath": "/stacktris"
+  },
+
+  {
+    "name": "2 Minute Football",
+    "creator": "Igamebank",
+    "path": "/g/2minutefootball.html",
+    "image": "/assets/image/2minutefootball.webp",
+    "hot": true,
+    "category": "sports",
+    "iframepath": "/2minutefootball"
+  },
+  {
+    "name": "Boxing Random",
+    "creator": "Rhm Interactive",
+    "path": "/g/boxingrandom.html",
+    "image": "/assets/image/boxingrandom.webp",
+    "hot": false,
+    "category": "sports",
+    "iframepath": "/boxingrandom"
+  },
+  {
+    "name": "Basketball Bros",
+    "creator": "Mad Puffers",
+    "path": "/g/basketballbros.html",
+    "image": "/assets/image/basketballstars.webp",
+    "hot": false,
+    "category": "sports",
+    "iframepath": "/basketbros"
+  },
+  {
+    "name": "Doodle Baseball",
+    "creator": "Google",
+    "path": "/g/doodlebaseball.html",
+    "image": "/assets/image/doodlebaseball.webp",
+    "hot": false,
+    "category": "sports",
+    "iframepath": "/doodlebaseball"
+  },
+  {
+    "name": "Escape Road",
+    "creator": "Az Games",
+    "path": "/g/escaperoad.html",
+    "image": "/assets/image/escaperoad.webp",
+    "hot": false,
+    "category": "sports",
+    "iframepath": "https://azgames.io/escaperoad/"
+  },
+  {
+    "name": "Escape Road 2",
+    "creator": "Az Games",
+    "path": "/g/escaperoad2.html",
+    "image": "/assets/image/escaperoad2.webp",
+    "hot": false,
+    "category": "sports",
+    "iframepath": "https:/.azgame.io/escaperoad2/"
+  },
+  {
+    "name": "Geometry Dash",
+    "creator": "Robtop Games",
+    "path": "/g/geometrydash.html",
+    "image": "/assets/image/geometrydash.webp",
+    "hot": true,
+    "category": "sports",
+    "iframepath": "/geometrydash"
+  },
+  {
+    "name": "Getaway Shootout",
+    "creator": "Neweich Games",
+    "path": "/g/getawayshootout.html",
+    "image": "/assets/image/getawayshootout.webp",
+    "hot": false,
+    "category": "sports",
+    "iframepath": "/GetawayShootouts"
+  },
+  {
+    "name": "Soccer Random",
+    "creator": "Rhm Interactive",
+    "path": "/g/soccerrandom.html",
+    "image": "/assets/image/soccerrandom.webp",
+    "hot": false,
+    "category": "sports",
+    "iframepath": "/soccerrandom"
+  },
+  {
+    "name": "Table Tennis World Tour",
+    "creator": "Yakuto",
+    "path": "/g/tabletennisworldtour.html",
+    "image": "/assets/image/tabletennisworldtour.webp",
+    "hot": false,
+    "category": "sports",
+    "iframepath": "/TableTennisWorldTour"
+  },
+  {
+    "name": "Retrobowl",
+    "creator": "New Star Games",
+    "path": "/g/retrobowl.html",
+    "image": "/assets/image/retrobowl.webp",
+    "hot": false,
+    "category": "sports",
+    "iframepath": "https:/316009.konggames.comz/0031/6009/live/index.html"
+  },
+
+  {
+    "name": "Bitlife",
+    "creator": "Candywriter",
+    "path": "/g/bitlife.html",
+    "image": "/assets/image/bitlife.webp",
+    "hot": true,
+    "category": "arcade",
+    "iframepath": "/bitlife"
+  },
+  {
+    "name": "Block Blast",
+    "creator": "Hungry Studio",
+    "path": "/g/blockblast.html",
+    "image": "/assets/image/blockblast.webp",
+    "hot": true,
+    "category": "arcade",
+    "iframepath": "/BlockBlast"
+  },
+  {
+    "name": "Gobble",
+    "creator": "Fancade",
+    "path": "/g/gobble.html",
+    "image": "/assets/image/gobble.webp",
+    "hot": true,
+    "category": "arcade",
+    "iframepath": "/gobble"
+  },
+  {
+    "name": "Hover Racer Drive",
+    "creator": "Unknown",
+    "path": "/g/hoverracerdrive.html",
+    "image": "/assets/image/hoverracerdrive.webp",
+    "hot": false,
+    "category": "arcade",
+    "iframepath": "/hoverracedrive"
+  },
+  {
+    "name": "Jetpack Joyride",
+    "creator": "Halfbrick Studios",
+    "path": "/g/jetpackjoyride.html",
+    "image": "/assets/image/jetpack.webp",
+    "hot": false,
+    "category": "arcade",
+    "iframepath": "/jetpackjoyride"
+  },
+  {
+    "name": "L2F",
+    "creator": "Marketjs",
+    "path": "/g/l2f.html",
+    "image": "/assets/image/l2f.webp",
+    "hot": false,
+    "category": "arcade",
+    "iframepath": "/L2f"
+  },
+  {
+    "name": "L2F2",
+    "creator": "Marketjs",
+    "path": "/g/l2f2.html",
+    "image": "/assets/image/l2f2.webp",
+    "hot": false,
+    "category": "arcade",
+    "iframepath": "/L2f2"
+  },
+  {
+    "name": "L2F3",
+    "creator": "Marketjs",
+    "path": "/g/l2f3.html",
+    "image": "/assets/image/l2f3.webp",
+    "hot": false,
+    "category": "arcade",
+    "iframepath": "/L2f3"
+  },
+  {
+    "name": "Level Devil",
+    "creator": "Unept",
+    "path": "/g/leveldevil.html",
+    "image": "/assets/image/leveldevil.webp",
+    "hot": true,
+    "category": "arcade",
+    "iframepath": "/LevelDevil"
+  },
+  {
+    "name": "Motoroadrash3d",
+    "creator": "Unknown",
+    "path": "/g/motoroadrash3d.html",
+    "image": "/assets/image/motoroadrash3d.webp",
+    "hot": true,
+    "category": "arcade",
+    "iframepath": "/motoroadrash3d"
+  },
+  {
+    "name": "MotoX3M",
+    "creator": "Mad Puffers",
+    "path": "/g/motox3m.html",
+    "image": "/assets/image/motox3m.webp",
+    "hot": false,
+    "category": "arcade",
+    "iframepath": "/motox3mmain"
+  },
+
+  {
+    "name": "Slime Laboratory",
+    "creator": "Neutronized.com",
+    "path": "/g/slimelaboratory.html",
+    "image": "/assets/image/slimelaboratory.webp",
+    "hot": false,
+    "category": "puzzle",
+    "iframepath": "/slimelaboratory"
+  },
+  {
+    "name": "Snow Rider 3D",
+    "creator": "Neutronized.com",
+    "path": "/g/snowrider3d.html",
+    "image": "/assets/image/snowrider.webp",
+    "hot": false,
+    "category": "puzzle",
+    "iframepath": "/snowrider"
+  },
+  {
+    "name": "Slope",
+    "creator": "Y8",
+    "path": "/g/slope.html",
+    "image": "/assets/image/slope.webp",
+    "hot": true,
+    "category": "puzzle",
+    "iframepath": "/Slope"
+  },
+  {
+    "name": "Slope 2",
+    "creator": "Y8",
+    "path": "/g/slope2.html",
+    "image": "/assets/image/slope.webp",
+    "hot": false,
+    "category": "puzzle",
+    "iframepath": "/Slope2"
+  },
+  {
+    "name": "Subway Surfers",
+    "creator": "Sybo Games",
+    "path": "/g/subwaysurfers.html",
+    "image": "/assets/image/subwaysurfers.webp",
+    "hot": true,
+    "category": "puzzle",
+    "iframepath": "/subwaysurfers"
+  },
+  {
+    "name": "Tag",
+    "creator": "Jetgames",
+    "path": "/g/tag.html",
+    "image": "/assets/image/tag.webp",
+    "hot": true,
+    "category": "puzzle",
+    "iframepath": "/Tag"
+  },
+  {
+    "name": "Tag 2",
+    "creator": "Jetgames",
+    "path": "/g/tag2.html",
+    "image": "/assets/image/tag2.webp",
+    "hot": true,
+    "category": "puzzle",
+    "iframepath": "/Tag2"
+  },
+  {
+    "name": "Tinyfishing",
+    "creator": "Mad Buffer",
+    "path": "/g/tinyfishing.html",
+    "image": "/assets/image/tinyfishing.webp",
+    "hot": false,
+    "category": "puzzle",
+    "iframepath": "/tinyfishing"
+  },
+  {
+    "name": "ZeePkist Crash",
+    "creator": "Steelpan Interactive",
+    "path": "/g/zeepkistcrash.html",
+    "image": "/assets/image/zeepkistcrash.webp",
+    "hot": true,
+    "category": "puzzle",
+    "iframepath": "/zeepkistcrash"
+  },
+  {
+    "name": "Slice Master",
+    "creator": "Unknown",
+    "path": "/g/slicemaster.html",
+    "image": "/assets/image/slicemaster.webp",
+    "hot": false,
+    "category": "puzzle",
+    "iframepath": "/slicemaster"
+  }
+]

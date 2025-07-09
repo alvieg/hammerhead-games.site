@@ -36,39 +36,37 @@ function main() {
     }
 
     const gamesData = JSON.parse(fs.readFileSync(path.resolve("public", "games.json"), 'utf8'));
-    gamesData.games.forEach((game) => {
+    gamesData.forEach((game) => {
         try {
-            if (game.visible === 1) {
-                // Ensure iframepath is defined
-                if (!game.iframepath) {
-                    console.error(`Error: IframePath is undefined for game: ${game.name}`);
-                    return;
-                }
-
-                // Ensure image is defined
-                if (!game.image) {
-                    console.error(`Error: Image is undefined for game: ${game.name}`);
-                    return;
-                }
-
-                const newFileName = `${game.name.toLowerCase().replace(/\s+/g, '')}.html`; // Remove spaces and hyphens
-                const newFilePath = path.join(outputDirPath, newFileName);
-
-                // Replace keywords in the template
-                const creator = game.creator.replace(/-/g, ' ');
-                const name = game.name.replace(/-/g, ' ');
-                const img = game.image.replace(/-/g, '').toLowerCase();
-                let newContent = template
-                    .replace(/GamePathInsert/g, game.iframepath)
-                    .replace(/GameImgInsert/g, img)
-                    .replace(/GameNameInsert/g, name)
-                    .replace(/CreatorNameInsert/g, creator)
-                    .replace(/GamePagePathInsert/g, game.path);
-
-                // Write the new file
-                fs.writeFileSync(newFilePath, newContent);
-                files++;
+            // Ensure iframepath is defined
+            if (!game.iframepath) {
+                console.error(`Error: IframePath is undefined for game: ${game.name}`);
+                return;
             }
+
+            // Ensure image is defined
+            if (!game.image) {
+                console.error(`Error: Image is undefined for game: ${game.name}`);
+                return;
+            }
+
+            const newFileName = `${game.name.toLowerCase().replace(/\s+/g, '')}.html`; // Remove spaces and hyphens
+            const newFilePath = path.join(outputDirPath, newFileName);
+
+            // Replace keywords in the template
+            const creator = game.creator;
+            const name = game.name;
+            const img = game.image.replace(/-/g, '').toLowerCase();
+            let newContent = template
+                .replace(/GamePathInsert/g, game.iframepath)
+                .replace(/GameImgInsert/g, img)
+                .replace(/GameNameInsert/g, name)
+                .replace(/CreatorNameInsert/g, creator)
+                .replace(/GamePagePathInsert/g, game.path);
+
+            // Write the new file
+            fs.writeFileSync(newFilePath, newContent);
+            files++;
         } catch (error) {
             console.error(`Error processing game: ${game.name}. Error: ${error.message}`);
             errors++;
