@@ -191,10 +191,10 @@ fetch('/games.json')
                     <p class="game-creator">${game.creator}</p></a>
                 </div>`;
 
-            allGames.innerHTML += allGamesHtml;
-            category.innerHTML += categoryHtml;
-            if (games.hot) {
-                hotGames.innerHTML += categoryHtml;
+            allGames.insertAdjacentHTML('beforeend', allGamesHtml);
+            category.insertAdjacentHTML('beforeend', categoryHtml);
+            if (game.hot) {
+                hotGames.insertAdjacentHTML('beforeend', categoryHtml);
             };
         }
     })
