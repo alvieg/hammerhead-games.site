@@ -8,121 +8,64 @@ body {
   padding: 0;
 }
 
+/* Game area styling */
+#game-area {
+  position: relative;
+  background: linear-gradient(135deg, var(--surface-dark) 0%, var(--surface-light) 100%);
+  border-radius: 12px;
+  margin: 20px 10px;
+  box-shadow: 0 8px 32px var(--shadow-dark);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+}
+
 /* Adjust iframe layout */
 #iframe {
     height: 600px;
-    width: 100vw;
+    width: calc(100vw - 20px);
     outline: none;
     border: none;
     border-radius: 12px;
     margin: 0;
     display: block;
-    margin-top: 100px; /* Account for fixed header */
+    margin-top: 90px; /* Adjusted for new header height */
     box-shadow: 0 8px 32px var(--shadow-dark);
 }
 
-/* Tag container setup - CrazyGames inspired design */
+/* Tag container setup - Navbar inspired design */
 .Tag {
-  width: 100vw;
-  height: 80px;
-  margin: 0;
+  width: calc(100vw - 20px);
+  height: 70px;
+  margin: 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(135deg, var(--surface-dark) 0%, var(--surface-light) 100%);
-  border-radius: 0;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 12px;
   padding: 0 2rem;
   position: relative;
   box-sizing: border-box;
-  border-top: 1px solid var(--border-light);
-  box-shadow: 0 -4px 20px var(--shadow-dark);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-/* Header styles for game pages - matching style.css */
-header {
-  background-color: rgba(26, 26, 46, 0.9);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  z-index: 1000;
-  border-radius: 16px;
   border: 1px solid var(--border-light);
-}
-
-.navlogo {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-}
-
-.navlinks {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
-.navlinks a {
-  color: var(--font-primary);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  font-weight: 500;
-}
-
-.navlinks a:hover {
-  background-color: var(--surface-light);
-  color: var(--accent-blue);
-  transform: translateY(-2px);
-}
-
-.logolinks {
-  width: 25px;
-  height: 25px;
-  transition: 0.3s ease-in-out transform;
-}
-
-.logolinks:hover {
-  transform: scale(150%);
-}
-
-/* Media query for small screens */
-@media (max-width: 800px) {
-    #iframe {
-        width: 100vw;
-        height: 500px;
-    }
-
-    .Tag {
-        width: 100vw;
-        height: 80px;
-    }
+  box-shadow: 0 4px 20px var(--shadow-dark);
+  margin-top: 10px;
 }
 
 /* Tag image styling */
 .TagImg {
-  width: 60px;
-  height: 60px;
-  border-radius: 12px;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
   margin-right: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px var(--shadow-dark);
+  box-shadow: 0 2px 8px var(--shadow-dark);
   object-fit: cover;
 }
 
 .TagImg:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 16px var(--shadow-dark);
+  box-shadow: 0 4px 12px var(--shadow-dark);
 }
 
 /* Tag text container */
@@ -134,8 +77,8 @@ header {
 }
 
 .TagGameName {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: var(--font-primary);
   text-shadow: 0 1px 2px var(--shadow-dark);
   margin: 0;
@@ -143,7 +86,7 @@ header {
 }
 
 .TagGameCreator {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-secondary);
   font-weight: 500;
   margin: 0;
@@ -158,22 +101,22 @@ header {
   flex: 1;
 }
 
-/* Fullscreen button styling */
+/* Fullscreen button styling - Navbar button style */
 .FullscreenImg {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-left: 1rem;
   display: block;
   transition: all 0.3s ease;
-  border-radius: 10px;
-  padding: 8px;
-  background: linear-gradient(135deg, var(--surface-light) 0%, var(--surface-dark) 100%);
-  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 6px;
+  background: transparent;
+  border: 1px solid transparent;
   box-shadow: 0 2px 8px var(--shadow-dark);
 }
 
 .FullscreenImg:hover {
-  transform: scale(1.1);
+  transform: translateY(-2px);
   box-shadow: 0 4px 12px var(--shadow-dark);
   background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
   border-color: var(--accent-blue);
@@ -208,48 +151,143 @@ header {
   gap: 0.25rem;
 }
 
-/* Responsive design for game bar */
-@media (max-width: 768px) {
-  .Tag {
-    height: 70px;
-    padding: 0 1rem;
-  }
-
-  .TagImg {
-    width: 50px;
-    height: 50px;
-    margin-right: 0.75rem;
-  }
-
-  .TagGameName {
-    font-size: 1.1rem;
-  }
-
-  .TagGameCreator {
-    font-size: 0.8rem;
-  }
-
-  .FullscreenImg {
-    width: 40px;
-    height: 40px;
-    margin-left: 0.75rem;
-  }
-
-  .game-stats {
-    display: none; /* Hide stats on mobile */
-  }
+/* Header styles for game pages - CrazyGames inspired design */
+header {
+  background: linear-gradient(135deg, var(--surface-dark) 0%, var(--surface-light) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--border-light);
+  height: 70px;
 }
 
-@media (max-width: 550px) {
+.navlogo {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px var(--shadow-dark);
+}
+
+.navlogo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px var(--shadow-dark);
+}
+
+.navlinks {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  height: 100%;
+}
+
+.navlinks a {
+  color: var(--font-primary);
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 0.95rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.navlinks a:hover {
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(78, 205, 196, 0.3);
+  border-color: var(--accent-blue);
+}
+
+.navlinks a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navlinks a:hover::before {
+  width: 80%;
+}
+
+.logolinks {
+  width: 22px;
+  height: 22px;
+  transition: all 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.logolinks:hover {
+  transform: scale(1.2);
+  filter: brightness(1.1);
+}
+
+/* Mobile menu button for game pages */
+.mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-btn span {
+  width: 25px;
+  height: 3px;
+  background: var(--font-primary);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-btn:hover span {
+  background: var(--accent-blue);
+}
+
+/* Responsive design for game bar */
+@media (max-width: 768px) {
+  #game-area {
+    margin: 15px 10px;
+  }
+
+  #iframe {
+    width: calc(100vw - 20px);
+    margin-top: 80px;
+  }
+
   .Tag {
     height: 60px;
-    padding: 0 0.75rem;
+    padding: 0 1rem;
+    width: calc(100vw - 20px);
   }
 
   .TagImg {
-    width: 45px;
-    height: 45px;
-    margin-right: 0.5rem;
+    width: 35px;
+    height: 35px;
+    margin-right: 0.75rem;
   }
 
   .TagGameName {
@@ -261,13 +299,107 @@ header {
   }
 
   .FullscreenImg {
+    width: 32px;
+    height: 32px;
+    margin-left: 0.75rem;
+  }
+
+  .game-stats {
+    display: none;
+  }
+
+  header {
+    padding: 0.5rem 1rem;
+    height: 60px;
+  }
+
+  .navlogo {
     width: 35px;
     height: 35px;
+  }
+
+  .navlinks {
+    gap: 0.75rem;
+  }
+
+  .navlinks a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .logolinks {
+    width: 18px;
+    height: 18px;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+  .navlinks.active {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, var(--surface-dark) 0%, var(--surface-light) 100%);
+    flex-direction: column;
+    padding: 1rem;
+    border-top: 1px solid var(--border-light);
+    box-shadow: 0 4px 20px var(--shadow-dark);
+  }
+}
+
+@media (max-width: 550px) {
+  #game-area {
+    margin: 10px 10px;
+  }
+
+  .Tag {
+    height: 55px;
+    padding: 0 0.75rem;
+  }
+
+  .TagImg {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+  }
+
+  .TagGameName {
+    font-size: 0.9rem;
+  }
+
+  .TagGameCreator {
+    font-size: 0.7rem;
+  }
+
+  .FullscreenImg {
+    width: 28px;
+    height: 28px;
     margin-left: 0.5rem;
   }
 
   .TagTextContainer {
     gap: 0.1rem;
+  }
+
+  header {
+    padding: 0.5rem;
+  }
+
+  .navlogo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navlinks a {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -370,31 +502,4 @@ footer {
 #mobile-back-button:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 20px var(--shadow-dark);
-}
-
-/* Game area styling */
-#game-area {
-  position: relative;
-  background: linear-gradient(135deg, var(--surface-dark) 0%, var(--surface-light) 100%);
-  border-radius: 12px;
-  margin: 20px;
-  box-shadow: 0 8px 32px var(--shadow-dark);
-  border: 1px solid var(--border-light);
-  overflow: hidden;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  #game-area {
-    margin: 10px;
-    border-radius: 8px;
-  }
-  
-  #iframe {
-    border-radius: 8px;
-  }
-  
-  .Tag {
-    border-radius: 0;
-  }
 }
