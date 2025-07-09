@@ -4,10 +4,17 @@
 }
 
 :root {
-  --background: #3f1900;
-  --surface-dark: #4B2E1A;
-  --font: "Font", sans-serif;
-  --font-primary: #104d8b;
+  /* Core Backgrounds */
+  --bg-primary: #1E1E1E;
+  --bg-secondary: #121212;
+
+  /* Accent Colors */
+  --accent-blue: #00BFFF;
+  --accent-green: #32CD32;
+
+  /* Text Colors */
+  --text-main: #F0F0F0;
+  --hover-highlight: #3399FF;
 }
 
 /* Reset and base styles */
