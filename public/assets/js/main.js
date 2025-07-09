@@ -203,8 +203,6 @@ fetch("/games.json")
                 </div>`;
 
       allGames.insertAdjacentHTML("beforeend", allGamesHtml);
-      const category = game.category.toLowerCase();
-      const categoryArea = document.getElementById(category);
 
       if (validCategories.includes(category) && categoryArea) {
         categoryArea.insertAdjacentHTML("beforeend", categoryHtml);
