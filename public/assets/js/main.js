@@ -177,9 +177,9 @@ fetch('/games.json')
     .then(response => response.json())
     .then(games => {
         const allGames = document.getElementById('all-games');
-        const hotGames = document.querySelector('#hot-games .carousel-track');
+        const hotGames = document.querySelector('#hot-games');
         for (const game of games){
-            const category = document.querySelector(`#${game.category}-games .carousel-track`);
+            const category = document.querySelector(`#${game.category}-games`);
             const categoryHtml = `
                 <div class="carousel-card"><a href="${game.path}"
                     <img src="${game.image}" alt="${game.name} image" title="${game.name}"></a>
