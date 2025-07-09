@@ -4,10 +4,10 @@
 }
 
 :root {
-  --background: #4B2E1A;
-  --surface-dark: #8B5C36;
+  --background: #3f1900;
+  --surface-dark: #4B2E1A;
   --font: "Font", sans-serif;
-  --font-primary: #1E90FF;
+  --font-primary: #104d8b;
 }
 
 /* Reset and base styles */

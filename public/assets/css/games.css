@@ -1,40 +1,105 @@
+/* Body styling for game pages */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background);
+  color: var(--font-primary);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
 /* Adjust iframe layout */
 #iframe {
     height: 600px;
-    width: 100vw; /* Subtract 300px for the ad container */
+    width: 100vw;
     outline: none;
     border: none;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-top: 20px;
+    border-radius: 0;
+    margin: 0;
+    display: block;
+    margin-top: 100px; /* Account for fixed header */
 }
 
 /* Tag container setup */
 .Tag {
-  margin: auto;
-  width: 100vw; /* Relative width for responsiveness */
+  width: 100vw;
   height: 100px;
-  margin-left: 50px;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1e1e1e;
-  border-radius: 0 0 15px 15px;
+  background-color: var(--surface-dark);
+  border-radius: 0;
   padding: 10px;
   position: relative;
-  box-sizing: border-box; /* Ensures padding is inside the width */
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Header styles for game pages - matching style.css */
+header {
+  background-color: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navlogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.navlinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navlinks a {
+  color: var(--font-primary);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.navlinks a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logolinks {
+  width: 25px;
+  height: 25px;
+  transition: 0.3s ease-in-out transform;
+}
+
+.logolinks:hover {
+  transform: scale(150%);
 }
 
 /* Media query for small screens */
 @media (max-width: 800px) {
     #iframe {
         width: 100vw;
-        margin-right: 0;
+        height: 500px;
     }
 
     .Tag {
         width: 100vw;
-        margin-right: 0;
+        height: 80px;
     }
 }
 
@@ -64,6 +129,7 @@
   font-size: 25px;
   margin-top: 1px;
   margin-bottom: 5px;
+  color: var(--font-primary);
 }
 
 .TagGameCreator {
@@ -81,4 +147,47 @@
     .TagTextContainer {
         display: none; /* Hide text on smaller screens */
     }
+}
+
+/* Footer styles for game pages - matching style.css */
+footer {
+  background-color: var(--surface-dark);
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footerdescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footerlogo {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.other-links-title {
+  margin-bottom: 1rem;
+  color: var(--font-primary);
+}
+
+.otherlinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.otherlinks a {
+  color: #888888;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.otherlinks a:hover {
+  color: var(--font-primary);
 }
