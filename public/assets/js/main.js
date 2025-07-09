@@ -232,7 +232,8 @@ function initCarouselAutoplay(selector) {
 
   function update() {
     cards.forEach((card, i) => {
-      card.style.transform = `translateX(${(i - current) * 220}px)`;
+      // Add 60px offset to account for arrow buttons (40px button + 15px margin + 5px buffer)
+      card.style.transform = `translateX(${(i - current) * 220 + 60}px)`;
       card.style.opacity = i === current ? "1" : "0.7";
       card.classList.toggle("active", i === current);
     });
