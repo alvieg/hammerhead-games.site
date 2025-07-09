@@ -173,14 +173,17 @@ window.clearDisclaimerCookie = function() {
   setInterval(next, 3000);
 }*/
 
+const validCategories = ['sports', 'action', 'strategy', 'puzzle', 'arcade'];
+
+
 fetch('/games.json')
     .then(response => response.json())
     .then(games => {
         const allGames = document.getElementById('all-games');
         const hotGames = document.querySelector('#hot-games');
         for (const game of games){
-            const category = game.category
-            const categoryArea = document.querySelector(`#${category.toLowerCase}`);
+            const category = game.category.toLowerCase()
+            const categoryArea = document.querySelector(`#${category}`);
             const categoryHtml = `
                 <div class="carousel-card"><a href="${game.path}"
                     <img src="${game.image}" alt="${game.name} image" title="${game.name}"></a>
@@ -193,7 +196,11 @@ fetch('/games.json')
                 </div>`;
 
             allGames.insertAdjacentHTML('beforeend', allGamesHtml);
-            category.insertAdjacentHTML('beforeend', categoryHtml);
+            if (category in validCategories) {
+              category.insertAdjacentHTML('beforeend', categoryHtml);
+            } else {
+              console.warn(`${game.name} has Invalid category: ${category}`);
+            }
             if (game.hot) {
                 hotGames.insertAdjacentHTML('beforeend', categoryHtml);
             };
