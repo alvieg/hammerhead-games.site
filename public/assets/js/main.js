@@ -183,7 +183,8 @@ fetch('/games.json')
         const hotGames = document.querySelector('#hot-games');
         for (const game of games){
             const category = game.category.toLowerCase()
-            const categoryArea = document.querySelector(`#${category}`);
+            const categoryArea = document.getElementById(category);
+            debugger
             const categoryHtml = `
                 <div class="carousel-card"><a href="${game.path}"
                     <img src="${game.image}" alt="${game.name} image" title="${game.name}"></a>
