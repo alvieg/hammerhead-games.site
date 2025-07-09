@@ -4,10 +4,10 @@
 }
 
 :root {
-  --background: #101010;
-  --surface-dark: #1e1e1e;
+  --background: #4B2E1A;
+  --surface-dark: #8B5C36;
   --font: "Font", sans-serif;
-  --font-primary: #fff;
+  --font-primary: #1E90FF;
 }
 
 /* Reset and base styles */
@@ -26,7 +26,7 @@ body {
 
 /* Header styles */
 header {
-  background-color: rgba(26, 26, 26, 0.75);
+  background-color: rgba(26, 26, 26, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 1rem 2rem;
@@ -225,7 +225,7 @@ main {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1.5rem;
-  margin-top: 3rem; /* Add space for the title */
+  margin-top: 4rem; /* Increased space for the title */
 }
 
 /* Game cards in all games section */
@@ -277,10 +277,11 @@ main {
 /* All Games title positioning */
 #all-games .category-title {
   position: absolute;
-  top: 1.5rem;
+  top: 1rem;
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
+  z-index: 10;
 }
 
 /* Footer styles */
