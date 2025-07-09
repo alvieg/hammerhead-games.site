@@ -278,6 +278,7 @@ header {
     padding: 0 1rem;
     width: calc(100vw - 20px);
     margin: 10px 10px 0 10px;
+    justify-content: flex-start;
   }
   
   .TagImg {
@@ -297,7 +298,7 @@ header {
   .FullscreenImg {
     width: 32px;
     height: 32px;
-    margin-left: 0.75rem;
+    margin-left: auto;
   }
 
   header {
@@ -358,6 +359,7 @@ header {
     padding: 0 0.75rem;
     width: calc(100vw - 20px);
     margin: 10px 10px 0 10px;
+    justify-content: flex-start;
   }
 
   .TagImg {
@@ -377,7 +379,7 @@ header {
   .FullscreenImg {
     width: 28px;
     height: 28px;
-    margin-left: 0.5rem;
+    margin-left: auto;
   }
 
   .TagTextContainer {
@@ -410,7 +412,7 @@ header {
   }
 
   .FullscreenImg {
-    margin-left: 0;
+    margin-left: auto;
   }
 }
 
