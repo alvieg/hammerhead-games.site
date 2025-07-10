@@ -1,6 +1,6 @@
 [
   {
-    "name": "1v1lol",
+    "name": "1v1 LOL",
     "creator": "Unknown",
     "path": "/g/1v1lol.html",
     "image": "/assets/image/1v1lol.webp",
@@ -9,7 +9,7 @@
     "iframepath": "/1v1lol"
   },
   {
-    "name": "BulletForce",
+    "name": "Bullet Force",
     "creator": "Blayze Games",
     "path": "/g/bulletforce.html",
     "image": "/assets/image/bulletforce.webp",
@@ -18,7 +18,7 @@
     "iframepath": "/bulletforce"
   },
   {
-    "name": "SausageMan",
+    "name": "Sausage Man",
     "creator": "XD Entertainment",
     "path": "/g/sausageman.html",
     "image": "/assets/image/sausageman.webp",
@@ -27,7 +27,7 @@
     "iframepath": "/sausageman"
   },
   {
-    "name": "CombatReloaded",
+    "name": "Combat Reloaded",
     "creator": "N-Dream",
     "path": "/g/combatreloaded.html",
     "image": "/assets/image/combatreloaded.webp",
@@ -36,16 +36,16 @@
     "iframepath": "/combatreloaded"
   },
   {
-    "name": "Evowars",
+    "name": "Evo Wars",
     "creator": "Night Steed Games",
     "path": "/g/evowars.html",
     "image": "/assets/image/evowars.webp",
     "hot": true,
     "category": "action",
-    "iframepath": "/evowars"
+    "iframepath": "/evolution"
   },
   {
-    "name": "ShellShockers",
+    "name": "Shell Shockers",
     "creator": "Blue Wizard Digital",
     "path": "/g/shellshockers.html",
     "image": "/assets/image/shellshockers.webp",
@@ -54,16 +54,16 @@
     "iframepath": "/shellshockers"
   },
   {
-    "name": "ZombsRoyale",
+    "name": "Zombs Royale",
     "creator": "End Game",
     "path": "/g/zombsroyale.html",
     "image": "/assets/image/zombsroyale.webp",
     "hot": true,
     "category": "action",
-    "iframepath": "/zombsroyale"
+    "iframepath": "/zombs-royale"
   },
   {
-    "name": "StickmanFighters",
+    "name": "Stickman Fighters",
     "creator": "DAB3 Games",
     "path": "/g/stickmanfighters.html",
     "image": "/assets/image/stickmanfighters.webp",
@@ -72,7 +72,7 @@
     "iframepath": "/stickmanfighters"
   },
   {
-    "name": "MercZone",
+    "name": "Merc Zone",
     "creator": "Blue Wizard Digital",
     "path": "/g/merczone.html",
     "image": "/assets/image/merczone.webp",
@@ -81,7 +81,7 @@
     "iframepath": "/merczone"
   },
   {
-    "name": "MiniGiants",
+    "name": "Mini Giants",
     "creator": "Night Steed Games",
     "path": "/g/minigiants.html",
     "image": "/assets/image/minigiants.webp",
@@ -108,16 +108,16 @@
     "iframepath": "/venge"
   },
   {
-    "name": "StickMerge",
+    "name": "Stick Merge",
     "creator": "Kiz10",
     "path": "/g/stickmerge.html",
     "image": "/assets/image/stickmerge.webp",
     "hot": false,
     "category": "action",
-    "iframepath": "/stickmerge"
+    "iframepath": "/stick-merge"
   },
   {
-    "name": "MadGunZ",
+    "name": "Mad GunZ",
     "creator": "Full HP Ltd",
     "path": "/g/madgunz.html",
     "image": "/assets/image/madgunz.webp",
@@ -126,7 +126,7 @@
     "iframepath": "/madgunz"
   },
   {
-    "name": "Warbrokers",
+    "name": "War Brokers",
     "creator": "Trebuchet Entertainment",
     "path": "/g/warbrokers.html",
     "image": "/assets/image/warbrokers.webp",
@@ -135,13 +135,13 @@
     "iframepath": "/warbrokers"
   },
   {
-    "name": "PixelGunApocalypse",
+    "name": "Pixel Gun Apocalypse",
     "creator": "Vitality Games",
     "path": "/g/pixelgunapocalypse.html",
     "image": "/assets/image/pixelgunapocalypse.webp",
     "hot": false,
     "category": "action",
-    "iframepath": "/pixelgunapocalypse"
+    "iframepath": "/pixel-gun-survival"
   },
 
   {
@@ -151,10 +151,10 @@
     "image": "/assets/image/trimps.webp",
     "hot": true,
     "category": "strategy",
-    "iframepath": "/trimps"
+    "iframepath": "/Trimps"
   },
   {
-    "name": "CanyonDefense",
+    "name": "Canyon Defense",
     "creator": "Armor Games",
     "path": "/g/canyondefense.html",
     "image": "/assets/image/canyondefense.webp",
@@ -163,7 +163,7 @@
     "iframepath": "/canyondefense"
   },
   {
-    "name": "BloonSTD",
+    "name": "Bloons TD",
     "creator": "Ninja Kiwi",
     "path": "/g/bloonstd.html",
     "image": "/assets/image/bloonstd.webp",
@@ -172,7 +172,7 @@
     "iframepath": "/bloonstd"
   },
   {
-    "name": "BloonSTD2",
+    "name": "Bloons TD 2",
     "creator": "Ninja Kiwi",
     "path": "/g/bloonstd2.html",
     "image": "/assets/image/bloonstd2.webp",
@@ -181,7 +181,7 @@
     "iframepath": "/bloonstd2"
   },
   {
-    "name": "BTD4",
+    "name": "BTD 4",
     "creator": "Ninja Kiwi",
     "path": "/g/btd4.html",
     "image": "/assets/image/btd4.webp",
@@ -190,7 +190,7 @@
     "iframepath": "/btd4"
   },
   {
-    "name": "BTD5",
+    "name": "BTD 5",
     "creator": "Ninja Kiwi",
     "path": "/g/btd5.html",
     "image": "/assets/image/btd5.webp",
@@ -199,25 +199,25 @@
     "iframepath": "/btd5"
   },
   {
-    "name": "DefendTheTank",
+    "name": "Defend The Tank",
     "creator": "Unknown",
     "path": "/g/defendthetank.html",
     "image": "/assets/image/defendthetank.webp",
     "hot": false,
     "category": "strategy",
-    "iframepath": "/defendthetank"
+    "iframepath": "/defend-the-tank"
   },
   {
-    "name": "StickmanSurvival",
+    "name": "Stickman Survival",
     "creator": "Unknown",
     "path": "/g/stickmansurvival.html",
     "image": "/assets/image/stickmansurvival.webp",
     "hot": false,
     "category": "strategy",
-    "iframepath": "/stickmansurvival"
+    "iframepath": "/stickman-survival"
   },
   {
-    "name": "BattleForGondor",
+    "name": "Battle For Gondor",
     "creator": "Unknown",
     "path": "/g/battleforgondor.html",
     "image": "/assets/image/battleforgondor.webp",
@@ -226,7 +226,7 @@
     "iframepath": "/battleforgondor"
   },
   {
-    "name": "ChampionArcher",
+    "name": "Champion Archer",
     "creator": "Armor Games",
     "path": "/g/championarcher.html",
     "image": "/assets/image/championarcher.webp",
@@ -235,7 +235,7 @@
     "iframepath": "/championarcher"
   },
   {
-    "name": "CreativeKillChamber",
+    "name": "Creative Kill Chamber",
     "creator": "Armor Games",
     "path": "/g/creativekillchamber.html",
     "image": "/assets/image/creativekillchamber.webp",
@@ -244,7 +244,7 @@
     "iframepath": "/creativekillchamber"
   },
   {
-    "name": "AlienHominid",
+    "name": "Alien Hominid",
     "creator": "The Behemoth",
     "path": "/g/alienhominid.html",
     "image": "/assets/image/alienhominid.webp",
@@ -253,7 +253,7 @@
     "iframepath": "/alienhominid"
   },
   {
-    "name": "AdarkRoom",
+    "name": "A Dark Room",
     "creator": "Doublespeak Games",
     "path": "/g/adarkroom.html",
     "image": "/assets/image/adarkroom.webp",
@@ -262,13 +262,13 @@
     "iframepath": "/adarkroom"
   },
   {
-    "name": "AgesOfConflict",
+    "name": "Ages Of Conflict",
     "creator": "JokuPelle",
     "path": "/g/agesofconflict.html",
     "image": "/assets/image/agesofconflict.webp",
     "hot": true,
     "category": "strategy",
-    "iframepath": "/agesofconflict"
+    "iframepath": "/ages-of-conflict"
   },
   {
     "name": "Astray",
@@ -280,59 +280,59 @@
     "iframepath": "/astray"
   },
   {
-    "name": "HexGL",
+    "name": "Hex GL",
     "creator": "BKcore",
     "path": "/g/hexgl.html",
     "image": "/assets/image/hexgl.webp",
     "hot": false,
     "category": "strategy",
-    "iframepath": "/hexgl"
+    "iframepath": "/HexGL"
   },
 
   {
-    "name": "BasketballStars",
+    "name": "Basketball Stars",
     "creator": "Madpuffers",
     "path": "/g/basketballstars.html",
     "image": "/assets/image/basketballstars.webp",
     "hot": true,
     "category": "sports",
-    "iframepath": "/basketballstars"
+    "iframepath": "/basketball-stars"
   },
   {
-    "name": "BasketRandom",
+    "name": "Basket Random",
     "creator": "RHM Interactive",
     "path": "/g/basketrandom.html",
     "image": "/assets/image/basketrandom.webp",
     "hot": true,
     "category": "sports",
-    "iframepath": "/basketrandom"
+    "iframepath": "/basket-random"
   },
   {
-    "name": "BasketbrosIO",
+    "name": "Basket Bros IO",
     "creator": "Blue Wizard Digital",
     "path": "/g/basketbrosio.html",
     "image": "/assets/image/basketbrosio.webp",
     "hot": false,
     "category": "sports",
-    "iframepath": "/basketbrosio"
+    "iframepath": "/basketbros-io"
   },
   {
-    "name": "BoxingRandom",
+    "name": "Boxing Random",
     "creator": "RHM Interactive",
     "path": "/g/boxingrandom.html",
     "image": "/assets/image/boxingrandom.webp",
     "hot": true,
     "category": "sports",
-    "iframepath": "/boxingrandom"
+    "iframepath": "/boxing-random"
   },
   {
-    "name": "CannonBasketball4",
+    "name": "Cannon Basketball 4",
     "creator": "Unknown",
     "path": "/g/cannonbasketball4.html",
     "image": "/assets/image/cannonbasketball4.webp",
     "hot": false,
     "category": "sports",
-    "iframepath": "/cannonbasketball4"
+    "iframepath": "/cannon-basketball-4"
   },
   {
     "name": "CTR",
@@ -344,43 +344,43 @@
     "iframepath": "/ctr"
   },
   {
-    "name": "CTRHoliday",
+    "name": "CTR Holiday",
     "creator": "Unknown",
     "path": "/g/ctrholiday.html",
     "image": "/assets/image/ctrholiday.webp",
     "hot": false,
     "category": "sports",
-    "iframepath": "/ctrholiday"
+    "iframepath": "/ctr-holiday"
   },
   {
-    "name": "CTRTR",
+    "name": "CTR TR",
     "creator": "Unknown",
     "path": "/g/ctrtr.html",
     "image": "/assets/image/ctrtr.webp",
     "hot": false,
     "category": "sports",
-    "iframepath": "/ctrtr"
+    "iframepath": "/ctr-tr"
   },
   {
-    "name": "CarsSimulator",
+    "name": "Cars Simulator",
     "creator": "Unknown",
     "path": "/g/carssimulator.html",
     "image": "/assets/image/carssimulator.webp",
     "hot": false,
     "category": "sports",
-    "iframepath": "/carssimulator"
+    "iframepath": "/cars-simulator"
   },
   {
-    "name": "RocketLeague",
+    "name": "Rocket League",
     "creator": "Psyonix (Fan Remake)",
     "path": "/g/rocketleague.html",
     "image": "/assets/image/rocketleague.webp",
     "hot": true,
     "category": "sports",
-    "iframepath": "/rocketleague"
+    "iframepath": "/Rocket-League"
   },
   {
-    "name": "CNPingPong",
+    "name": "CN Ping Pong",
     "creator": "Cartoon Network",
     "path": "/g/cnpingpong.html",
     "image": "/assets/image/cnpingpong.webp",
@@ -389,7 +389,7 @@
     "iframepath": "/cnpingpong"
   },
   {
-    "name": "BusAndSubway",
+    "name": "Bus And Subway",
     "creator": "Unknown",
     "path": "/g/busandsubway.html",
     "image": "/assets/image/busandsubway.webp",
@@ -398,34 +398,34 @@
     "iframepath": "/busandsubway"
   },
   {
-    "name": "ChampionIsland",
+    "name": "Champion Island",
     "creator": "Google",
     "path": "/g/championisland.html",
     "image": "/assets/image/championisland.webp",
     "hot": true,
     "category": "sports",
-    "iframepath": "/championisland"
+    "iframepath": "/champion-island"
   },
   {
-    "name": "AquaparkSlides",
+    "name": "Aqua Park Slides",
     "creator": "Unknown",
     "path": "/g/aquaparkslides.html",
     "image": "/assets/image/aquaparkslides.webp",
     "hot": false,
     "category": "sports",
-    "iframepath": "/aquaparkslides"
+    "iframepath": "/aquapark-slides"
   },
   {
-    "name": "AmazingRopePolice",
+    "name": "Amazing Rope Police",
     "creator": "Unknown",
     "path": "/g/amazingropepolice.html",
     "image": "/assets/image/amazingropepolice.webp",
     "hot": false,
     "category": "sports",
-    "iframepath": "/amazingropepolice"
+    "iframepath": "/amazing-rope-police"
   },
   {
-    "name": "AdrenalineChallenge",
+    "name": "Adrenaline Challenge",
     "creator": "Unknown",
     "path": "/g/adrenalinechallenge.html",
     "image": "/assets/image/adrenalinechallenge.webp",
@@ -444,7 +444,7 @@
     "iframepath": "/2048"
   },
   {
-    "name": "Cupcake2048",
+    "name": "Cupcake 2048",
     "creator": "Unknown",
     "path": "/g/cupcake2048.html",
     "image": "/assets/image/cupcake2048.webp",
@@ -462,7 +462,7 @@
     "iframepath": "/hextris"
   },
   {
-    "name": "Connect3",
+    "name": "Connect 3",
     "creator": "Unknown",
     "path": "/g/connect3.html",
     "image": "/assets/image/connect3.webp",
@@ -471,16 +471,16 @@
     "iframepath": "/connect3"
   },
   {
-    "name": "CellMachine",
+    "name": "Cell Machine",
     "creator": "Sam Hogan",
     "path": "/g/cellmachine.html",
     "image": "/assets/image/cellmachine.webp",
     "hot": true,
     "category": "puzzle",
-    "iframepath": "/cellmachine"
+    "iframepath": "/cell-machine"
   },
   {
-    "name": "Doge2048",
+    "name": "Doge 2048",
     "creator": "Unknown",
     "path": "/g/doge2048.html",
     "image": "/assets/image/doge2048.webp",
@@ -498,31 +498,31 @@
     "iframepath": "/circlo"
   },
   {
-    "name": "CoreBall",
+    "name": "Core Ball",
     "creator": "Unknown",
     "path": "/g/coreball.html",
     "image": "/assets/image/coreball.webp",
     "hot": false,
     "category": "puzzle",
-    "iframepath": "/coreball"
+    "iframepath": "/core-ball"
   },
   {
-    "name": "DealOrNoDeal",
+    "name": "Deal Or No Deal",
     "creator": "Endemol (Fan Remake)",
     "path": "/g/dealornodeal.html",
     "image": "/assets/image/dealornodeal.webp",
     "hot": false,
     "category": "puzzle",
-    "iframepath": "/dealornodeal"
+    "iframepath": "/deal-or-no-deal"
   },
   {
-    "name": "DeepestSword",
+    "name": "Deepest Sword",
     "creator": "Cosmic Adventure Squad",
     "path": "/g/deepestsword.html",
     "image": "/assets/image/deepestsword.webp",
     "hot": true,
     "category": "puzzle",
-    "iframepath": "/deepestsword"
+    "iframepath": "/deepest-sword"
   },
   {
     "name": "Avalanche",
@@ -543,13 +543,13 @@
     "iframepath": "/bloxors"
   },
   {
-    "name": "ShapeShootout",
+    "name": "Shape Shootout",
     "creator": "Unknown",
     "path": "/g/shapeshootout.html",
     "image": "/assets/image/shapeshootout.webp",
     "hot": false,
     "category": "puzzle",
-    "iframepath": "/shapeshootout"
+    "iframepath": "/ShapeShootout"
   },
   {
     "name": "9007199254740992",
@@ -570,7 +570,7 @@
     "iframepath": "/bitlife"
   },
   {
-    "name": "AchievementUnlocked",
+    "name": "Achievement Unlocked",
     "creator": "Armor Games",
     "path": "/g/achievementunlocked.html",
     "image": "/assets/image/achievementunlocked.webp",
@@ -580,16 +580,16 @@
   },
 
   {
-    "name": "MonkeyMart",
+    "name": "Monkey Mart",
     "creator": "TinyDobbins",
     "path": "/g/monkeymart.html",
     "image": "/assets/image/monkeymart.webp",
     "hot": true,
     "category": "arcade",
-    "iframepath": "/monkeymart"
+    "iframepath": "/MonkeyMart"
   },
   {
-    "name": "Run2",
+    "name": "Run 2",
     "creator": "Player03",
     "path": "/g/run2.html",
     "image": "/assets/image/run2.webp",
@@ -598,16 +598,16 @@
     "iframepath": "/run2"
   },
   {
-    "name": "DoodleJump",
+    "name": "Doodle Jump",
     "creator": "Lima Sky",
     "path": "/g/doodlejump.html",
     "image": "/assets/image/doodlejump.webp",
     "hot": true,
     "category": "arcade",
-    "iframepath": "/doodlejump"
+    "iframepath": "/doodle-jump"
   },
   {
-    "name": "CrossyRoad",
+    "name": "Crossy Road",
     "creator": "Hipster Whale",
     "path": "/g/crossyroad.html",
     "image": "/assets/image/crossyroad.webp",
@@ -625,13 +625,13 @@
     "iframepath": "/cubefield"
   },
   {
-    "name": "ChromeDino",
+    "name": "Chrome Dino",
     "creator": "Google",
     "path": "/g/chromedino.html",
     "image": "/assets/image/chromedino.webp",
     "hot": true,
     "category": "arcade",
-    "iframepath": "/chromedino"
+    "iframepath": "/chrome-dino"
   },
   {
     "name": "Backrooms",
@@ -643,25 +643,25 @@
     "iframepath": "/backrooms"
   },
   {
-    "name": "Backrooms2D",
+    "name": "Backrooms 2D",
     "creator": "Unknown",
     "path": "/g/backrooms2d.html",
     "image": "/assets/image/backrooms2d.webp",
     "hot": false,
     "category": "arcade",
-    "iframepath": "/backrooms2d"
+    "iframepath": "/backrooms-2d"
   },
   {
-    "name": "AdventureDrivers",
+    "name": "Adventure Drivers",
     "creator": "Unknown",
     "path": "/g/adventuredrivers.html",
     "image": "/assets/image/adventuredrivers.webp",
     "hot": false,
     "category": "arcade",
-    "iframepath": "/adventuredrivers"
+    "iframepath": "/adventure-drivers"
   },
   {
-    "name": "Awesometanks2",
+    "name": "Awesome Tanks 2",
     "creator": "Alexander Gette",
     "path": "/g/awesometanks2.html",
     "image": "/assets/image/awesometanks2.webp",
@@ -670,34 +670,34 @@
     "iframepath": "/awesometanks2"
   },
   {
-    "name": "BadIceCream",
+    "name": "Bad Ice Cream",
     "creator": "Nitrome",
     "path": "/g/badicecream.html",
     "image": "/assets/image/badicecream.webp",
     "hot": true,
     "category": "arcade",
-    "iframepath": "/badicecream"
+    "iframepath": "/bad-ice-cream"
   },
   {
-    "name": "BadIceCream2",
+    "name": "Bad Ice Cream 2",
     "creator": "Nitrome",
     "path": "/g/badicecream2.html",
     "image": "/assets/image/badicecream2.webp",
     "hot": false,
     "category": "arcade",
-    "iframepath": "/badicecream2"
+    "iframepath": "/bad-ice-cream-2"
   },
   {
-    "name": "BadIceCream3",
+    "name": "Bad Ice Cream 3",
     "creator": "Nitrome",
     "path": "/g/badicecream3.html",
     "image": "/assets/image/badicecream3.webp",
     "hot": false,
     "category": "arcade",
-    "iframepath": "/badicecream3"
+    "iframepath": "/bad-ice-cream-3"
   },
   {
-    "name": "BobTheRobber2",
+    "name": "Bob The Robber 2",
     "creator": "Meow Beast",
     "path": "/g/bobtherobber2.html",
     "image": "/assets/image/bobtherobber2.webp",
@@ -706,7 +706,7 @@
     "iframepath": "/bobtherobber2"
   },
   {
-    "name": "Boxhead2Play",
+    "name": "Boxhead 2 Play",
     "creator": "Sean Cooper",
     "path": "/g/boxhead2play.html",
     "image": "/assets/image/boxhead2play.webp",
@@ -715,7 +715,7 @@
     "iframepath": "/boxhead2play"
   },
   {
-    "name": "BonkIO",
+    "name": "Bonk IO",
     "creator": "Chaz",
     "path": "/g/bonkio.html",
     "image": "/assets/image/bonkio.webp",
