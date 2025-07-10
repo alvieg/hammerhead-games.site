@@ -4,15 +4,19 @@ const axios = require('axios');
 
 // Config
 const username = 'alvieg';
-const repo = 'hammerhead-games.site';
+const repo = 'Game-Files';
 const outputDir = path.join(__dirname, '..', 'public', 'assets', 'games');
 const gamesJsonUrl = `https://raw.githubusercontent.com/${username}/${repo}/main/dir.json`;
+
+// GitHub Token
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Store your token in an environment variable
 
 // Add headers to avoid rate limiting
 const axiosConfig = {
   headers: {
     'User-Agent': 'Game-Downloader/1.0',
-    'Accept': 'application/vnd.github.v3+json'
+    'Accept': 'application/vnd.github.v3+json',
+    ...(GITHUB_TOKEN ? { 'Authorization': `token ${GITHUB_TOKEN}` } : {})
   }
 };
 
@@ -22,22 +26,28 @@ fs.mkdirSync(outputDir, { recursive: true });
 async function downloadGameFolder(gameName) {
   try {
     console.log(`🚀 Downloading ${gameName}...`);
-    
+
     // Create the game directory
     const gameDir = path.join(outputDir, gameName);
+
+    // If the directory exists, remove it first to replace it
+    if (fs.existsSync(gameDir)) {
+      fs.rmSync(gameDir, { recursive: true, force: true });
+      console.log(`  ♻️  Existing folder ${gameName} removed.`);
+    }
     fs.mkdirSync(gameDir, { recursive: true });
-    
+
     // Get the directory contents
     const contentsUrl = `https://api.github.com/repos/${username}/${repo}/contents/${gameName}`;
-    
+
     try {
       console.log(`  📂 Fetching contents for ${gameName}...`);
       const response = await axios.get(contentsUrl, axiosConfig);
       const contents = response.data;
-      
+
       if (Array.isArray(contents)) {
         console.log(`  📁 Found ${contents.length} items in ${gameName}`);
-        
+
         // It's a directory, download all files
         for (const item of contents) {
           if (item.type === 'file') {
