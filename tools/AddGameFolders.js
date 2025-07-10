@@ -4,7 +4,7 @@ const axios = require('axios');
 
 // Config
 const username = 'alvieg';
-const repo = 'Game-Files';
+const repo = 'hammerhead-games.site';
 const outputDir = path.join(__dirname, '..', 'public', 'assets', 'games');
 const gamesJsonUrl = `https://raw.githubusercontent.com/${username}/${repo}/main/dir.json`;
 
