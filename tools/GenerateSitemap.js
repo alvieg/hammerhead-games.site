@@ -4,7 +4,7 @@ const path = require("path");
 const publicFolder = path.resolve("public/");
 const targetFolder = path.join(publicFolder, "g"); // Adjusted for tools folder inside public
 const sitemapFile = path.join(publicFolder, "sitemap.xml"); // Save sitemap in public folder
-const domain = "https://coldnova.xyz"; // Change this to your actual domain
+const domain = "https://hammerhead-games.vercel.app"; // Change this to your actual domain
 
 // Function to get all HTML files recursively
 function getHtmlFiles(dir, fileList = []) {
