@@ -1,171 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HammerHead Games - Free Online Games - Play Now!</title>
+    <meta
+      name="description"
+      content="Play free online games at HammerHead Games. Discover a variety of games and enjoy endless fun!"
+    />
+    <meta
+      name="keywords"
+      content="free online games, HammerHead Games, gaming, play games"
+    />
+    <meta name="author" content="HammerHead Labs" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#101010" />
+    <link rel="canonical" href="https://hammerhead-games.vercel.app/" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ColdNova - Free Online Games - Play Now!</title>
-  <meta name="description" content="Play free online games at ColdNova. Discover a variety of games and enjoy endless fun!" />
-  <meta name="keywords" content="free online games, ColdNova, gaming, play games" />
-  <meta name="author" content="ColdNova Team" />
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#101010" />
-  <link rel="canonical" href="https://coldnova.xyz/" />
+    <!-- Preconnects for performance -->
+    <link
+      rel="preconnect"
+      href="https://www.googletagmanager.com"
+      crossorigin
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Preconnects for performance -->
-  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="/assets/css/style.css" as="style" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 
-  <!-- Preload critical CSS -->
-  <link rel="preload" href="/assets/css/style.css" as="style" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Favicons and Manifest -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="HammerHead Games" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 
-  <!-- Favicons and Manifest -->
-  <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="ColdNova" />
-  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <!-- Open Graph Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="HammerHead Games" />
+    <meta
+      property="og:title"
+      content="HammerHead Games - Free Online Games - Play Now!"
+    />
+    <meta
+      property="og:description"
+      content="Play free online games at HammerHead Games. Discover a variety of games and enjoy endless fun!"
+    />
+    <meta property="og:url" content="https://hammerhead-games.vercel.app/" />
+    <meta property="og:image" content="/assets/favicon/favicon.ico" />
 
-  <!-- Open Graph Meta -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="ColdNova" />
-  <meta property="og:title" content="ColdNova - Free Online Games - Play Now!" />
-  <meta property="og:description" content="Play free online games at ColdNova. Discover a variety of games and enjoy endless fun!" />
-  <meta property="og:url" content="https://coldnova.xyz/" />
-  <meta property="og:image" content="/logo.png" />
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "HammerHead Games",
+        "url": "https://hammerhead-games.vercel.app/",
+        "description": "Play free online games at HammerHead Games. Discover a variety of games and enjoy endless fun!",
+        "publisher": {
+          "@type": "Organization",
+          "name": "HammerHead Labs"
+        },
+        "image": "/assets/favicon/favicon.ico"
+      }
+    </script>
 
-  <!-- Twitter Card Meta -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ColdNova - Free Online Games - Play Now!" />
-  <meta name="twitter:description" content="Play free online games at ColdNova. Discover a variety of games and enjoy endless fun!" />
-  <meta name="twitter:image" content="/logo.png" />
-  <meta name="twitter:site" content="@coldnovagames" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B347C2H08H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-B347C2H08H");
+    </script>
+  </head>
 
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "ColdNova",
-    "url": "https://coldnova.xyz/",
-    "description": "Play free online games at ColdNova. Discover a variety of games and enjoy endless fun!",
-    "publisher": {
-      "@type": "Organization",
-      "name": "ColdNova"
-    },
-    "image": "/logo.png"
-  }
-  </script>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B347C2H08H"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-B347C2H08H");
-  </script>
-</head>
-
-<body>
-
-  <div class="indexdisclaimer">
-    <div id="disclaimer-popup" class="popup-overlay">
-      <div class="popup-content">
-        <div class="container">
-          <h1>Stop Blocking Coldnova</h1>
-          <h3>Thank you for playing</h3>
-          <h3>To Securly Admins</h3>
-          <h3>Please stop blocking my websites. Please take the time to whitelist this. If you cant, <a
-              href="mailto:developersfuncontact@gmail.com">contact me</a></h3>
-          <h3>- Developers Fun</h3>
-          <button id="close-disclaimer">Continue</button>
+  <body>
+    <div class="indexdisclaimer">
+      <div id="disclaimer-popup" class="popup-overlay">
+        <div class="popup-content">
+          <div class="container">
+            <h1>Stop Blocking HammerHead Games</h1>
+            <h3>Thank you for playing</h3>
+            <h3>To Securly Admins</h3>
+            <h3>
+              Please stop blocking my websites. Please take the time to
+              whitelist this. If you cant,
+              <a href="mailto:hammerhead.contact2025@gmail.com">contact me</a>
+            </h3>
+            <h3>- HammerHead</h3>
+            <button id="close-disclaimer">Continue</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <header>
-    <a href="/">
-      <img src="/logo.png" alt="logo" class="navlogo" />
-    </a>
+    <header>
+      <a href="/">
+        <img src="/assets/favicon/favicon.ico" alt="logo" class="navlogo" />
+      </a>
 
-    <div class="navlinks">
-      <a href="/"><img class="logolinks" src="/assets/image/home.webp" alt="Home"></a>
-    </div>
-  </header>
-
-  <main>
-    <div class="HotGames">
-      <h3 class="list-title">🔥Hot Games🔥</h3>
-      <div class="Boxes" id="Boxes"></div>
-    </div>
-    <h3 class="list-title">You may like</h3>
-
-    <div class="game-container">
-      <div class="game-select" id="gameid"></div>
-    </div>
-
-    <article class="about-section">
-      <div class="about-title">About ColdNova</div>
-      <h1 class="about-heading">Free Online Games</h1>
-      <div class="about-content">
-        <p>
-          ColdNova brings you a curated selection of free online games and provides a smooth, distraction‑free gaming
-          experience. No downloads, no popups, no account required—just instant gaming on desktop, tablet, or mobile.
-          Join many players worldwide enjoying our gamews every day.
-        </p>
-
-        <h3>Start Playing</h3>
-        <p>
-          Not sure where to begin? Explore our homepage.
-        </p>
-        <ul>
-
-          <h3>What is ColdNova?</h3>
-          <p>
-            ColdNova is an indie game platform offering premium browser-based games for free. We handpick quality
-            titles, and support seamless play across all devices. Our mission is to provide an accessible gaming
-            playground open to everyone.
-          </p>
+      <div class="navlinks">
+        <a href="#hot-games">🔥Hot🔥</a>
+        <a href="#action-games">Action</a>
+        <a href="#strategy-games">Strategy</a>
+        <a href="#sports-games">Sports</a>
+        <a href="#arcade-games">Arcade</a>
+        <a href="#puzzle-games">Puzzle</a>
+        <a href="#all-games">All Games</a>
       </div>
-    </article>
-  </main>
+    </header>
 
-  <footer>
-    <div class="footerdescription">
-      <img src="/logo.png" alt="logo" class="footerlogo" />
-      <span>ColdNova</span>
-    </div>
+    <main>
+      <div id="categories">
+        <div id="hot-games" class="carousel">
+          <h3 class="category-title">🔥Hot Games🔥</h3>
+          <button class="arrow left">‹</button>
+          <div class="carousel-track"></div>
+          <button class="arrow right">›</button>
+          <!--Hot Games Carousel from json-->
+        </div>
+        <div id="action-games" class="carousel">
+          <h3 class="category-title">Action Games</h3>
+          <button class="arrow left">‹</button>
+          <div class="carousel-track"></div>
+          <button class="arrow right">›</button>
+          <!--Action Games Carousel from json-->
+        </div>
+        <div id="strategy-games" class="carousel">
+          <h3 class="category-title">Strategy Games</h3>
+          <button class="arrow left">‹</button>
+          <div class="carousel-track"></div>
+          <button class="arrow right">›</button>
+          <!--Strategy Games Carousel from json-->
+        </div>
+        <div id="sports-games" class="carousel">
+          <h3 class="category-title">Sports Games</h3>
+          <button class="arrow left">‹</button>
+          <div class="carousel-track"></div>
+          <button class="arrow right">›</button>
+          <!--Sports Games Carousel from json-->
+        </div>
+        <div id="arcade-games" class="carousel">
+          <h3 class="category-title">Arcade Games</h3>
+          <button class="arrow left">‹</button>
+          <div class="carousel-track"></div>
+          <button class="arrow right">›</button>
+          <!--Arcade Games Carousel from json-->
+        </div>
+        <div id="puzzle-games" class="carousel">
+          <h3 class="category-title">Puzzle Games</h3>
+          <button class="arrow left">‹</button>
+          <div class="carousel-track"></div>
+          <button class="arrow right">›</button>
+          <!--Puzzle Games Carousel from json-->
+        </div>
+        <!--<div class="carousel-card">
+        <img src="" alt="" title="">
+      </div>-->
+      </div>
+      <div id="all-games">
+        <h3 class="category-title">All Games</h3>
+        <!--All Games from json-->
+        <!--<div class="game-card">
+        <img src="" alt="">
+        <h4 class="game-name"></h4>
+        <p class="game-creator"></p>
+      </div>-->
+      </div>
+    </main>
 
-    <h3 class="other-links-title">Other Links</h3>
+    <footer>
+      <div class="footerdescription">
+        <img src="/assets/favicon/favicon.ico" alt="logo" class="footerlogo" />
+        <span>HammerHead Games</span>
+      </div>
 
-    <div class="otherlinks">
-      <a href="https://developers-fun.com/" target="_blank" rel="follow noopener noreferrer">My Portfolio</a>
-      <a href="https://wordpuzzles.coldnova.xyz/" target="_blank" rel="follow noopener noreferrer">Word Puzzles</a>
-      <a href="https://blockblastgenerator.com/" target="_blank" rel="follow noopener noreferrer">Block Blast
-        Generator</a>
-      <a href="https://feelingmusical.com/" target="_blank" rel="follow noopener noreferrer">Feeling Musical</a>
-      <a href="https://nytsolver.net/" target="_blank" rel="follow noopener noreferrer">NYT Solver</a>
-    </div>
+      <h3 class="other-links-title">Legal Links</h3>
 
-    <h3 class="other-links-title">Legal Links</h3>
+      <div class="otherlinks">
+        <a href="/dmca.html" target="_blank" rel="follow noopener noreferrer"
+          >DMCA</a
+        >
+        <a
+          href="/privacy-policy.html"
+          target="_blank"
+          rel="follow noopener noreferrer"
+          >Privacy Policy</a
+        >
+      </div>
+    </footer>
 
-    <div class="otherlinks">
-      <a href="/dmca.html" target="_blank" rel="follow noopener noreferrer">DMCA</a>
-      <a href="/privacy-policy.html" target="_blank" rel="follow noopener noreferrer">Privacy Policy</a>
-    </div>
+    <script src="/assets/js/script.js" async></script>
 
-  </footer>
-
-  <script src="/assets/js/script.js" async></script>
-
-  <script src="/assets/js/main.js"></script>
-</body>
-
+    <script src="/assets/js/main.js"></script>
+  </body>
 </html>
