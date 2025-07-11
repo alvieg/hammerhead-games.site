@@ -1,3 +1,4 @@
+<!--For Dynamic URL options-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,10 +7,10 @@
         <title>GameNameInsert - Play Free Online | HammerHead Games</title>
         <meta name="description" content="Play GameNameInsert by CreatorNameInsert and discover endless fun at HammerHead Games. No downloads, no popups, just instant browser gaming!" />
         <meta name="keywords" content="free online games, HammerHead Games, gaming, play games, GameNameInsert, CreatorNameInsert" />
-        <meta name="author" content="HammerHead Games Team" />
+        <meta name="author" content="HammerHead Labs" />
         <meta name="robots" content="index, follow">
         <meta name="theme-color" content="#101010" />
-        <link rel="canonical" href="https://HammerHead Games.xyzGamePagePathInsert" />
+        <link rel="canonical" href="https://hammerhead-games.vercel.app/GamePagePathInsert" />
         
         <!-- Preconnects for performance -->
         <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
@@ -35,15 +36,9 @@
         <meta property="og:site_name" content="HammerHead Games" />
         <meta property="og:title" content="GameNameInsert - Play Free Online | HammerHead Games" />
         <meta property="og:description" content="Play GameNameInsert by CreatorNameInsert and discover endless fun at HammerHead Games." />
-        <meta property="og:url" content="https://HammerHead Games.xyz/GamePagePathInsert" />
+        <meta property="og:url" content="https://hammerhead-games.vercel.app/GamePagePathInsert" />
         <meta property="og:image" content="GameImgInsert" />
         
-        <!-- Twitter Card Meta -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="GameNameInsert - Play Free Online | HammerHead Games" />
-        <meta name="twitter:description" content="Play GameNameInsert by CreatorNameInsert and discover endless fun at HammerHead Games." />
-        <meta name="twitter:image" content="GameImgInsert" />
-        <meta name="twitter:site" content="@HammerHead Gamesgames" />
         
         <!-- Structured Data (JSON-LD) -->
         <script type="application/ld+json">
@@ -56,10 +51,10 @@
             "name": "CreatorNameInsert"
           },
           "image": "GameImgInsert",
-          "url": "https://HammerHead Games.xyzGamePagePathInsert",
+          "url": "https://hammerhead-games.vercel.app/GamePagePathInsert",
           "publisher": {
             "@type": "Organization",
-            "name": "HammerHead Games"
+            "name": "HammerHead Labs"
           },
           "applicationCategory": "Game",
           "operatingSystem": "All"
@@ -79,13 +74,19 @@
       </head>
 <body>
     <header>
-        <a href="/">
-          <img src="/assets/favicon/favicon.ico" alt="logo" class="navlogo" width="60" height="60" />
-        </a>
-  
-        <div class="navlinks">
-          <a href="/"><img class="logolinks" src="/assets/image/home.webp" alt="Home" width="25" height="25"></a>
-        </div>
+      <a href="/">
+        <img src="/assets/favicon/favicon.ico" alt="logo" class="navlogo" />
+      </a>
+
+      <div class="navlinks">
+        <a href="/public/index.html#hot-games">🔥Hot🔥</a>
+        <a href="/public/index.html#action-games">Action</a>
+        <a href="/public/index.html#strategy-games">Strategy</a>
+        <a href="/public/index.html#sports-games">Sports</a>
+        <a href="/public/index.html#arcade-games">Arcade</a>
+        <a href="/public/index.html#puzzle-games">Puzzle</a>
+        <a href="/public/index.html#all-games">All Games</a>
+      </div>
     </header>
 
 
@@ -99,7 +100,7 @@
           
           <div class="Tag">
             <div class="tagcontainer">
-              <img class="TagImg" alt="Game Thumbnail" fetchpriority="high" width="90" height="90">
+              <img id="gameImg">
               <div class="TagTextContainer">
                 <h1 class="TagGameName"></h1>
                 <h2 class="TagGameCreator"></h2>
@@ -114,19 +115,10 @@
 
     <footer>
       <div class="footerdescription">
-        <img src="/logo.png" alt="logo" class="footerlogo" />
+        <img src="/assets/favicon/favicon.ico" alt="logo" class="footerlogo" />
         <span>HammerHead Games</span>
       </div>
 
-      <h3 class="other-links-title">Other Links</h3>
-
-      <div class="otherlinks">
-        <a href="https://developers-fun.com/" target="_blank" rel="follow noopener noreferrer">My Portfolio</a>
-        <a href="https://wordpuzzles.HammerHead Games.xyz/" target="_blank" rel="follow noopener noreferrer">Word Puzzles</a>
-        <a href="https://blockblastgenerator.com/" target="_blank" rel="follow noopener noreferrer">Block Blast Generator</a>
-        <a href="https://feelingmusical.com/" target="_blank" rel="follow noopener noreferrer">Feeling Musical</a>
-        <a href="https://nytsolver.net/" target="_blank" rel="follow noopener noreferrer">NYT Solver</a>
-      </div>
 
       <h3 class="other-links-title">Legal Links</h3>
 
@@ -137,5 +129,27 @@
       
   </footer>
     <script src="/assets/js/script.js"></script>
+
+    <script>
+      // Set dynamic game details from URL parameters
+      document.title = `${gameName} - Play Free Online | HammerHead Games`;
+      const params = new URLSearchParams(window.location.search);
+      const gameName = params.get('gameName') || 'No Game Here';
+      const creatorName = params.get('creatorName') || 'No Creator Here';
+      const gameImg = params.get('gameImg') || '/assets/favicon/favicon.ico';
+      const gamePath = `games${params.get('gamePath')}/index.html` || '404.html'
+
+      //DOM Elements
+      const iframe = document.getElementById('iframe');
+      const gameImgElement = document.getElementById('gameImg');
+      const gameNameElement = document.querySelector('.TagGameName');
+      const gameCreatorElement = document.querySelector('.TagGameCreator');
+
+      // Set game details in the DOM
+      gameImgElement.src = gameImg;
+      gameNameElement.textContent = gameName;
+      gameCreatorElement.textContent = creatorName;
+      iframe.src = gamePath;
+    </script>
 </body>
 </html>
