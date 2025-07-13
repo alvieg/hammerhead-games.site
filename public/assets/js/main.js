@@ -140,12 +140,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const categoryContainer = document.getElementById(category + "-games");
         const categoryTrack = categoryContainer ? categoryContainer.querySelector('.carousel-track') : null;
         const hotTrack = hotGames.querySelector('.carousel-track');
+        const link = `play.html?gameName=${encodeURIComponent(game.name)}&gameCreator=${encodeURIComponent(game.creator)}&gamePath=${encodeURIComponent(game.path)}&gameImg=${encodeURIComponent(game.image)}`;
         const categoryHtml = `
-                <div class="carousel-card"><a href="${game.path}">
+                <div class="carousel-card"><a href="${link}">
                     <img src="${game.image}" alt="${game.name} image" title="${game.name}" class="game-image"></a>
                 </div>`;
         const allGamesHtml = `
-                <div class="game-card"><a href="${game.path}">
+                <div class="game-card"><a href="${link}">
                     <img src="${game.image}" alt="${game.name} image" class="game-image">
                     <h4 class="game-name">${game.name}</h4>
                     <p class="game-creator">${game.creator}</p></a>
