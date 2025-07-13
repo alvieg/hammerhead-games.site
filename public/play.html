@@ -146,10 +146,10 @@
   <script src="/assets/js/script.js"></script>
   <script>
     const params = new URLSearchParams(window.location.search);
-    const gameName = decodeURIComponent(params.get('gameName') || 'Error 404, Game Not Found');
-    const creatorName = decodeURIComponent(params.get('creatorName') || 'If you tried adjusting the URL, you did it wrong');
-    const gamePath = decodeURIComponent(params.get('gamePath') || '404.html');
-    const gameImg = decodeURIComponent(params.get('gameImg') || 'logo.png');
+    const gameName = decodeURIComponent(params.get('gameName')) || 'Error 404, Game Not Found';
+    const creatorName = decodeURIComponent(params.get('creatorName')) || 'If you tried adjusting the URL, you did it wrong';
+    const gamePath = `/assets/games${decodeURIComponent(params.get('gamePath'))}/index.html` || '404.html';
+    const gameImg = decodeURIComponent(params.get('gameImg')) || 'logo.png';
 
     document.title = `${gameName} - Play Free Online | HammerHead Games`;
     document.querySelector('meta[name="description"]').setAttribute('content', `Play ${gameName} by ${creatorName} and discover endless fun at HammerHead Games. No downloads, no popups, just instant browser gaming!`);
